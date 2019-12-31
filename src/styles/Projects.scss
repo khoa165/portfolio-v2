@@ -60,8 +60,7 @@
       background: $brand-primary-color;
       list-style: none;
       &:first-child {
-        margin-top: 40px;
-        padding-top: 40px;
+        padding-top: 20px;
       }
       &:nth-child(odd) .project-card {
         left: 40px;
@@ -136,7 +135,6 @@
           margin-bottom: 15px;
         }
         img {
-          border: 1px solid rgba(0, 0, 0, 0.6);
           border-radius: 8px;
           width: 30%;
           padding: 5px;

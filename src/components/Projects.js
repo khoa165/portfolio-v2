@@ -6,7 +6,6 @@ import friendsImage from '../images/friends.svg';
 import buddiesImage from '../images/buddies.svg';
 import petImage from '../images/pet.svg';
 import sharkImage from '../images/shark.svg';
-import '../styles/Projects.scss';
 
 const projects = [
   {title: 'BuddE Network', image: `${friendsImage}`,
@@ -49,7 +48,6 @@ class Projects extends React.Component {
     window.addEventListener('resize', this.run);
     window.addEventListener('scroll', this.run);
   };
-
   run = () => {
     const items = document.querySelectorAll('#projects-line li');
     items.forEach(item => {
@@ -58,10 +56,8 @@ class Projects extends React.Component {
       }
     });
   };
-
   isInView = item => {
     const rect = item.getBoundingClientRect();
-
     return (
       rect.top >= 0 &&
       rect.left >= 0 &&
@@ -70,7 +66,6 @@ class Projects extends React.Component {
       rect.right <= (window.innerWidth || document.documentElement.clientWidth)
     );
   };
-
   render() {
     return (
       <div id="projects-line">

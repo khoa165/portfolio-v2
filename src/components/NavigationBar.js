@@ -48,7 +48,7 @@ class NavigationBar extends React.Component {
   render() {
     return (
       <div>
-        <Responsive {...Responsive.onlyMobile}>
+        <Responsive {...Responsive.onlyTablet}>
           <NavigationBarMobile
             items={items}
             onPusherClick={this.handlePusher}
@@ -59,7 +59,7 @@ class NavigationBar extends React.Component {
             {this.props.children}
           </NavigationBarMobile>
         </Responsive>
-        <Responsive minWidth={Responsive.onlyTablet.minWidth} onUpdate={this.handleScreenSizeUpdate}>
+        <Responsive minWidth={Responsive.onlyComputer.minWidth} onUpdate={this.handleScreenSizeUpdate}>
           <NavigationBarDesktop items={items} goToSection={this.goToSection}>
             {this.props.children}
           </NavigationBarDesktop>
