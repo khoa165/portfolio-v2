@@ -4,6 +4,7 @@ import Home from '../components/Home';
 import About from '../components/About';
 import Projects from '../components/Projects';
 import Experiences from '../components/Experiences';
+import Education from "../components/Education";
 import styles from '../styles/Index.scss';
 
 const Landing = () => {
@@ -36,6 +37,14 @@ const Landing = () => {
         headingColor={styles.brandPrimaryColor}
         headingMargin="20px auto 50px auto">
         <Experiences />
+      </Section>
+      <Section className="education" id="education" height="100vh"
+        padding="150px 0 100px 0"
+        heading="EDUCATION"
+        background={styles.backgroundPrimaryDark}
+        headingColor={styles.brandPrimaryColor}
+        headingMargin="20px auto 100px auto">
+        <Education />
       </Section>
     </div>
   )

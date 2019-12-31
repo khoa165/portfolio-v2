@@ -1,0 +1,99 @@
+#education {
+  .row {
+    justify-content: space-evenly;
+  }
+  .education-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 35px;
+    width: 110%;
+    position: relative;
+    text-align: right;
+    margin-top: 30px;
+    .card-title {
+      font-weight: bold;
+      font-size: 18px;
+      margin: 0;
+    }
+    .card-text {
+      font-size: 15px;
+      margin: 0;
+    }
+    .school-year {
+      font-style: italic;
+    }
+    &.red-hexagon {
+      border-bottom: 7px solid #EF5145;
+      height: 240px;
+    }
+    &.yellow-hexagon {
+      border-bottom: 7px solid #FFC107;
+      height: 220px;
+    }
+    &.blue-hexagon {
+      border-bottom: 7px solid #007BFF;
+      height: 200px;
+    }
+  }
+  .hexagon {
+    width: 100px;
+    height: 55px;
+    position: absolute;
+    left: -1px;
+    top: -29px;
+    &:before {
+      content: "";
+      position: absolute;
+      top: -25px;
+      left: 0;
+      width: 0;
+      height: 0;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: -25px;
+      left: 0;
+      width: 0;
+      height: 0;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+    }
+    &.red-hexagon {
+      background: #EF5145;
+      &:before {
+        border-bottom: 25px solid #EF5145;
+      }
+      &:after {
+        border-top: 25px solid #EF5145;
+      }
+    }
+    &.yellow-hexagon {
+      background: #FFC107;
+      &:before {
+        border-bottom: 25px solid #FFC107;
+      }
+      &:after {
+        border-top: 25px solid #FFC107;
+      }
+    }
+    &.blue-hexagon {
+      background: #007BFF;
+      &:before {
+        border-bottom: 25px solid #007BFF;
+      }
+      &:after {
+        border-top: 25px solid #007BFF;
+      }
+    }
+  }
+  @media (max-width: 991px) {
+    .education-card {
+      margin-left: 0;
+      width: 100%;
+    }
+  }
+}
