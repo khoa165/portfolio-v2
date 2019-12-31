@@ -1,26 +1,33 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import AOS from 'aos';
+import { toast } from 'react-toastify';
+import {BrowserRouter as Router, Route} from 'react-router-dom';
+import NavigationBar from './components/NavigationBar';
+import Landing from './pages/Landing';
+import './App.scss';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  componentDidMount = e => {
+    AOS.init({ disable: 'mobile' });
+    toast.configure({
+      pauseOnHover: false
+    });
+  };
+  render() {
+    return (
+      <Router>
+        <div className="App">
+          <NavigationBar>
+            <Route
+              exact={true}
+              path="/"
+              component={Landing}
+            />
+          </NavigationBar>
+        </div>
+      </Router>
+    );
+  }
 }
 
 export default App;

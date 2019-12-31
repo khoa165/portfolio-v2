@@ -1,0 +1,135 @@
+@import './Variables.scss';
+@import './Button.scss';
+
+#home {
+  color: $brand-primary-color;
+  height: 100vh;
+
+  .particle-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+  }
+  .container {
+    width: 70%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    top: 50vh;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  /* -------------------------------------------------------------------------- */
+  /* Typewriter */
+  .typing-title {
+    font-size: 30px;
+    font-weight: bolder;
+    font-family: $heading-primary-font, $heading-secondary-font;
+    letter-spacing: 3px;
+    -webkit-transition: 0.1s linear all;
+    -o-transition: 0.1s linear all;
+    transition: 0.1s linear all;
+    line-height: 45px;
+    text-align: center;
+  }
+  .typing-title .job-title {
+    color: $brand-secondary-color;
+    -webkit-animation: colorRend 2s linear 1s infinite forwards;
+    animation: colorRend 2s linear 1s infinite forwards;
+  }
+  .Typist .Cursor {
+    display: inline-block;
+  }
+  .Typist .Cursor--blinking {
+    opacity: 1;
+    border: none;
+    color: #e95555;
+    -webkit-animation: blink 1s linear infinite forwards;
+    animation: blink 1s linear infinite forwards;
+  }
+  
+  @-webkit-keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes colorRend {
+    0% {
+      color: #e95555;
+    }
+    25% {
+      color: #ec8585;
+    }
+    50% {
+      color: #ebb3b3;
+    }
+    75% {
+      color: #ec8585;
+    }
+    100% {
+      color: #e95555;
+    }
+  }
+  @keyframes colorRend {
+    0% {
+      color: #e95555;
+    }
+    25% {
+      color: #ec8585;
+    }
+    50% {
+      color: #ebb3b3;
+    }
+    75% {
+      color: #ec8585;
+    }
+    100% {
+      color: #e95555;
+    }
+  }
+  
+  @media (max-width: 800px) {
+    .typing-title {
+      font-size: 20px;
+    }
+  }
+  @media (max-width: 450px) {
+    .typing-title {
+      font-size: 15px;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+@import './Variables.scss';
+@import './Avatar.scss';
+
+#about {
+  .info {
+    text-align: left;
+    p {
+      color: #fff;
+      font-size: 20px;
+    }
+    .see-more-statement {
+      color: grey;
+      font-size: 18px;
+    }
+    Button {
+      margin: 0 10px;
+    }
+  }
+
+  .profile-pic {
+    padding-left: 50px;
+    border-left: 1px solid $brand-primary-color;
+  }
+
+  .extra-info {
+    text-align: left;
+    margin: 75px 0;
+    p {
+      color: #fff;
+      font-size: 20px;
+    }
+    a {
+      color: $brand-primary-color;
+      font-size: 20px;
+      margin-left: 20px;
+    }
+    a:hover {
+      text-decoration: none;
+      padding-bottom: 2px;
+      border-bottom: 1px solid $brand-primary-color;
+    }
+  }
+}
