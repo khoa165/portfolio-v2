@@ -2,7 +2,6 @@ import React from "react";
 import scrollIntoView from 'smooth-scroll-into-view-if-needed';
 import {Container, Row, Col, Button} from 'reactstrap';
 import '../styles/About.scss';
-import avatar from '../images/avatar.jpg';
 
 class About extends React.Component {
   state = {expandMoreInfo: false}
@@ -35,7 +34,7 @@ class About extends React.Component {
               : null}
             </Col>
             <Col lg="4" className="profile-pic d-none d-lg-block">
-              <img src={avatar} alt="My avatar" className="avatar" />
+              <img src="https://res.cloudinary.com/khoa165/image/upload/q_100/v1577895922/portfolio/avatar.jpg" alt="My avatar" className="avatar" />
             </Col>
           </Row>
           <div className="extra-info">
