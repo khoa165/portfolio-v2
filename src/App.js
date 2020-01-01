@@ -1,6 +1,6 @@
 import React from 'react';
 import AOS from 'aos';
-import { toast } from 'react-toastify';
+import {toast} from 'react-toastify';
 import {BrowserRouter as Router, Route} from 'react-router-dom';
 import NavigationBar from './components/NavigationBar';
 import Landing from './pages/Landing';
