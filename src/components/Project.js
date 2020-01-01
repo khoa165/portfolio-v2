@@ -33,7 +33,7 @@ class Project extends React.Component {
             <a
               rel="noopener noreferrer"
               target="_blank"
-              href="https://github.com/nchulani2/yelpcamp"
+              href={this.props.source}
               className="project-button">
                 Source
             </a>

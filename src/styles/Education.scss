@@ -1,16 +1,13 @@
 #education {
-  .row {
-    justify-content: space-evenly;
-  }
   .education-card {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 35px;
-    width: 110%;
     position: relative;
     text-align: right;
-    margin-top: 30px;
+    &:first-child, &:nth-child(2) {
+      margin-bottom: 80px;
+    }
     .card-title {
       font-weight: bold;
       font-size: 18px;
@@ -88,6 +85,31 @@
       &:after {
         border-top: 25px solid #007BFF;
       }
+    }
+  }
+  @media (min-width: 1200px) {
+    .row {
+      justify-content: space-evenly;
+    }
+    .education-card {
+      margin-left: 35px;
+      &:first-child {
+        width: 130%;
+      }
+      &:nth-child(2) {
+        width: 110%;
+      }
+      &:nth-child(2){
+        width: 90%;
+      }
+    }
+  }
+  @media (max-width: 1199px) and (min-width: 992px) {
+    .row {
+      justify-content: center;
+    }
+    .education-card {
+      width: 110%;
     }
   }
   @media (max-width: 991px) {

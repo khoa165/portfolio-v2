@@ -88,7 +88,7 @@ class Projects extends React.Component {
           <div />
           <div />
           <div />
-          <a href="https://github.com/khoa165" className="github-button btn-lg" rel="noopener noreferrer" target="_blank">More projects on GitHub</a>
+          <a href="https://github.com/khoa165/All-my-projects" className="github-button btn-lg" rel="noopener noreferrer" target="_blank">More projects on GitHub</a>
         </div>
       </div>
     )
