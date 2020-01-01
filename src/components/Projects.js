@@ -2,13 +2,8 @@ import React from "react";
 import Project from './Project';
 import '../styles/Projects.scss';
 
-import friendsImage from '../images/friends.svg';
-import buddiesImage from '../images/buddies.svg';
-import petImage from '../images/pet.svg';
-import sharkImage from '../images/shark.svg';
-
 const projects = [
-  {title: 'BuddE Network', image: `${friendsImage}`,
+  {title: 'BuddE Network', image: "https://res.cloudinary.com/khoa165/image/upload/q_100/v1577895922/portfolio/friends.svg",
   descriptions: [
     'Mini social network that allows creating/removing users, adding/removing friendship between users, navigating through the network from the view of each user.',
     'Led a team of four to complete a decent final class project. Facilitated coding sessions to build prototype with Lucidchart and assist others with desiging, implementing and debugging the program.',
@@ -16,7 +11,7 @@ const projects = [
   ],
   skills: ['Back-end with Java', 'Front-end with JavaFX', "Graph data structure"],
   source: "https://github.com/khoa165/BuddENetwork"},
-  {title: 'Buddy Up', image: `${buddiesImage}`,
+  {title: 'Buddy Up', image: "https://res.cloudinary.com/khoa165/image/upload/q_100/v1577895922/portfolio/buddies.svg",
   descriptions: [
     'MVP platform to connect people with similar interests, focus on 1-on-1 buddy networking.',
     'Pitched idea and convinced others to join team. Led a team of four with proficient workflow through GitHub collaboration platform. Split user stories across team members, built intuitive UX/UI.'
@@ -24,14 +19,14 @@ const projects = [
   skills: ['Ruby on Rails', 'PostgreSQL', 'HTML | CSS | JS', 'Heroku', 'GitHub', 'Bootstrap', 'jQuery', 'Cloudinary', 'Devise authentication', 'Geocoding', 'PredictHQ API', 'Figma'],
   demo: "https://www.buddyup.xyz/",
   source: "https://github.com/khoa165/buddyUp"},
-  {title: 'Fish Evolution', image: `${sharkImage}`,
+  {title: 'Fish Evolution', image: "https://res.cloudinary.com/khoa165/image/upload/q_100/v1577895922/portfolio/shark.svg",
   descriptions: [
     'Classic game of big fish capturing smaller fish.',
     'Practiced Object-oriented programming (OOP) concepts and Data Structures and Algorithms (DSA).'
   ],
   skills: ['Back-end with Java', 'Front-end with Processing'],
   source: "https://github.com/khoa165/fish-evolution"},
-  {title: 'Pet Now', image: `${petImage}`,
+  {title: 'Pet Now', image: "https://res.cloudinary.com/khoa165/image/upload/q_100/v1577895922/portfolio/pet.svg",
   descriptions: [
     'MVP platform to allow pet lover to rent pet for a short amount of time.',
     'Pitched idea and convinced others to join team. Led a team of four with proficient workflow through GitHub collaboration platform. Split user stories across team members, built intuitive UX/UI.'
