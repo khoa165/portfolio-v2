@@ -8,7 +8,7 @@ class Resume extends React.Component {
     return (
       <div>
         <div className="resume-download">
-          <a href={resume} className="github-button btn-lg" rel="noopener noreferrer" target="_blank">Download</a>
+          <a href={resume} className="brand-dark-button btn-lg" rel="noopener noreferrer" target="_blank">Download</a>
         </div>
         <Container className="resume-wrapper">
           <iframe

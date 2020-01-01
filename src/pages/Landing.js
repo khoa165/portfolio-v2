@@ -7,6 +7,7 @@ import Experiences from '../components/Experiences';
 import Education from "../components/Education";
 import Skills from "../components/Skills";
 import Resume from "../components/Resume";
+import ContactForm from "../components/ContactForm";
 import styles from '../styles/Index.scss';
 
 const Landing = () => {
@@ -63,6 +64,14 @@ const Landing = () => {
         headingColor={styles.brandPrimaryColor}
         headingMargin="20px auto 100px auto">
         <Resume />
+      </Section>
+      <Section className="contact" id="contact" height="100vh"
+        padding="150px 0 100px 0"
+        heading="CONTACT ME"
+        background={styles.backgroundSecondaryDark}
+        headingColor={styles.brandPrimaryColor}
+        headingMargin="20px auto 100px auto">
+        <ContactForm />
       </Section>
     </div>
   )
