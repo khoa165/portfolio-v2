@@ -40,4 +40,4 @@ class Education extends React.Component {
   }
 }
 
-export default Education 
+export default Education;

@@ -46,6 +46,19 @@
   @media (max-width: 1199px) and (min-width: 992px) {
     .container {
       padding-left: 3vw;
+      .extra-info {
+        padding-left: 7vw;
+      }
+    }
+  }
+  @media (max-width: 1399px) and (min-width: 1200px)  {
+    .container .extra-info {
+      padding-left: 7vw;
+    }
+  }
+  @media (min-width: 1400px) {
+    .container .extra-info {
+      padding-left: 5.5vw;
     }
   }
 }
