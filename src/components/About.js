@@ -29,7 +29,7 @@ class About extends React.Component {
               <p>I enjoy building websites using MongoDB-Express-Node and Ruby on Rails stacks. Working as a Student Web and Application Developer for Department of Medical Physics, I also familiarize myself with PHP and MySQL, maintaining existing websites and building new internal apps to serve around 250 students and faculties of the department.</p>
               {!this.state.expandMoreInfo ?
                 <p className="see-more-statement">If you are not bored yet, 
-                  <Button size="sm" onClick={() => this.toggle()}>Read more</Button> 
+                  <Button size="sm" onClick={this.toggle}>Read more</Button> 
                   about my coding journey.
                 </p>
               : null}
