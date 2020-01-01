@@ -180,15 +180,17 @@
       }
     }
   }
-  @media (max-width: 900px) {
-    ul li .project-card {
-      width: 250px;
+  @media (max-width: 1060px) and (min-width: 992px) {
+    li:nth-child(odd) .project-card {
+      width: 375px;
+      margin-left: -10px;
     }
-    ul li:nth-child(even) .project-card {
-      left: -284px;
+    li:nth-child(even) .project-card {
+      width: 375px;
+      margin-left: 35px;
     }
   }
-  @media (max-width: 600px) {
+  @media (max-width: 991px) {
     ul {
       padding-left: 0;
       padding-right: 0;

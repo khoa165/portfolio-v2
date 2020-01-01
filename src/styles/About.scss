@@ -2,6 +2,9 @@
 @import './Avatar.scss';
 
 #about {
+  .row {
+    justify-content: flex-end;
+  }
   .info {
     text-align: left;
     p {
@@ -38,6 +41,11 @@
       text-decoration: none;
       padding-bottom: 2px;
       border-bottom: 1px solid $brand-primary-color;
+    }
+  }
+  @media (max-width: 1199px) and (min-width: 992px) {
+    .container {
+      padding-left: 3vw;
     }
   }
 }

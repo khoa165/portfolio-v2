@@ -49,6 +49,26 @@ body, html {
   to   { opacity: 1; }
 }
 
+/* SCROLLBAR */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: $background-primary-grey;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $brand-primary-color;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $brand-primary-color;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -62,5 +82,5 @@ html {
 }
 
 *, *:before, *:after {
-  box-sizing: inherit;
+  box-sizing: border-box;
 }

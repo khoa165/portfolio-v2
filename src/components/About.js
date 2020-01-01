@@ -24,7 +24,7 @@ class About extends React.Component {
       <div>
         <Container>
           <Row className="align-items-center">
-            <Col xs="12" lg="8" className="info">
+            <Col xs="12" lg="7" className="info">
               <p>I am a sophomore studying Computer Science at the University of Wisconsin at Madison. I am actively looking for internships in software development/engineering for Summer 2020 and Fall 2020.</p>
               <p>I enjoy building websites using MongoDB-Express-Node and Ruby on Rails stacks. Working as a Student Web and Application Developer for Department of Medical Physics, I also familiarize myself with PHP and MySQL, maintaining existing websites and building new internal apps to serve around 250 students and faculties of the department.</p>
               {!this.state.expandMoreInfo ?

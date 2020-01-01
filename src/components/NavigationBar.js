@@ -47,7 +47,18 @@ class NavigationBar extends React.Component {
   };
   render() {
     return (
-      <div>
+      <div id="navigation-bar">
+        <Responsive {...Responsive.onlyMobile}>
+          <NavigationBarMobile
+            items={items}
+            onPusherClick={this.handlePusher}
+            onToggle={this.handleToggle}
+            visible={this.state.visible}
+            onUpdate={this.handleScreenSizeUpdate}
+            goToSection={this.goToSection}>
+            {this.props.children}
+          </NavigationBarMobile>
+        </Responsive>
         <Responsive {...Responsive.onlyTablet}>
           <NavigationBarMobile
             items={items}
