@@ -12,7 +12,7 @@ const items = [
   {text: 'Experiences', iconName: 'cogs', link: '/#experiences'},
   {text: 'Education', iconName: 'student', link: '/#education'},
   {text: 'Skills', iconName: 'lightbulb', link: '/#skills'},
-  {text: 'Interests', iconName: 'chess', link: '/#interests'},
+  // {text: 'Interests', iconName: 'chess', link: '/#interests'},
   {text: 'Resume', iconName: 'tasks', link: '/#resume'},
   {text: 'Contact', iconName: 'conversation', link: '/#contact'}
 ];
