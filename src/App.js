@@ -8,7 +8,8 @@ import './App.scss';
 
 class App extends React.Component {
   componentDidMount = e => {
-    AOS.init({ disable: 'mobile' });
+    // AOS.init({ disable: 'mobile' });
+    AOS.init();
     toast.configure({
       pauseOnHover: false
     });

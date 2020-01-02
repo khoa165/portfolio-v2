@@ -10,7 +10,7 @@ const frontendSkills = [
   {details: 'JavaScript: proficient', url: 'https://res.cloudinary.com/khoa165/image/upload/q_100/v1577845512/portfolio/javascript.svg'},
   {details: 'Bootstrap: proficient', url: 'https://res.cloudinary.com/khoa165/image/upload/q_100/v1577848326/portfolio/bootstrap.svg'},
   {details: 'Semantic UI: familiar', url: 'https://res.cloudinary.com/khoa165/image/upload/q_100/v1577858595/portfolio/semanticui.svg'},
-  {details: 'jQuery: proficient', url: 'https://res.cloudinary.com/khoa165/image/upload/q_100/v1577848326/portfolio/jquery.svg', class: 'bg-light'},
+  {details: 'jQuery: proficient', url: 'https://res.cloudinary.com/khoa165/image/upload/c_scale,h_100,q_100/v1578004777/portfolio/jquery.svg'},
   {details: 'Sass: proficient', url: 'https://res.cloudinary.com/khoa165/image/upload/q_100/v1577861494/portfolio/sass_miliqh.svg'}
 ];
 const backendSkills = [

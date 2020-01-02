@@ -17,4 +17,14 @@
     height: 100%;
     border-radius: 10px;
   }
+  @media (max-width: 991px) {
+    .container.resume-wrapper {
+      max-width: 80%;
+      padding-bottom: 90%;
+    }
+    .iframer {
+      left: 5%;
+      width: 90%;
+    }
+  }
 }
