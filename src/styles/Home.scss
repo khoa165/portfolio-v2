@@ -4,7 +4,13 @@
 #home {
   color: $brand-primary-color;
   height: 100vh;
-
+  .social-media {
+    color: #fff;
+    font-size: 16px;
+    .icon {
+      font-size: 25px;
+    }
+  }
   .particle-canvas {
     position: absolute;
     top: 0;

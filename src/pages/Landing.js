@@ -67,7 +67,7 @@ const Landing = () => {
       </Section>
       <Section className="contact" id="contact" height="100vh"
         padding="150px 0 100px 0"
-        heading="CONTACT ME"
+        heading="CONTACT"
         background={styles.backgroundSecondaryDark}
         headingColor={styles.brandPrimaryColor}
         headingMargin="20px auto 100px auto">
