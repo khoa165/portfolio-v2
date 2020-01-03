@@ -11,16 +11,16 @@ class ContactForm extends React.Component {
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
-  handleChange(event) {
+  handleChange = event => {
     this.setState({
       [event.target.name]: event.target.value
     });
   }
-  handleSubmit() {
+  handleSubmit = () => {
     const templateId = 'portfolio_template';
 	  this.sendMessage(templateId, {message_html: this.state.message, from_name: this.state.name, reply_to: this.state.email})
   }
-  sendMessage(templateId, variables) {
+  sendMessage = (templateId, variables) => {
     window.emailjs.send('gmail', templateId, variables)
       .then(res => {
         if (res.status === 200) {
@@ -58,40 +58,45 @@ class ContactForm extends React.Component {
     return (
       <Container>
         <Form>
-          <div id="fields-wrapper">
-            <FormGroup>
-              <Label for="contactFormNameField" className="form-label">Name</Label>
-              <Input type="text" name="name" required
-                id="contactFormNameField" 
-                placeholder="How should I address you..."
-                onChange={this.handleChange}
-                value={this.state.name}
-              />
-            </FormGroup>
-            <FormGroup>
-              <Label for="contactFormEmailField" className="form-label">Email</Label>
-              <Input type="email" name="email" required
-                id="contactFormEmailField" 
-                placeholder="Which email works best for you..."
-                onChange={this.handleChange}
-                value={this.state.email}
-              />
-            </FormGroup>
-            <FormGroup>
-              <Label for="contactFormMessageField" className="form-label">Message</Label>
-              <Input type="textarea" name="message" rows="5" required
-                id="contactFormMessageField"
-                placeholder="What might we talk about..."
-                onChange={this.handleChange}
-                value={this.state.message}
-              />
-            </FormGroup>
-            <div id="recaptcha-wrapper">
-              <div className="g-recaptcha" data-sitekey="6LeHeMsUAAAAALWOkRTmh1ft2a7-QR4uguw6ImDz"></div>
+          <div id="form-wrapper">
+            <p className="contact-statement">
+              You can reach me at <span>ktle4@wisc.edu</span> or fill in the form below. I will try to respond withing 48 hours.
+            </p>
+            <div id="fields-wrapper">
+              <FormGroup>
+                <Label for="contactFormNameField" className="form-label">Name</Label>
+                <Input type="text" name="name" required
+                  id="contactFormNameField" 
+                  placeholder="How should I address you..."
+                  onChange={this.handleChange}
+                  value={this.state.name}
+                />
+              </FormGroup>
+              <FormGroup>
+                <Label for="contactFormEmailField" className="form-label">Email</Label>
+                <Input type="email" name="email" required
+                  id="contactFormEmailField" 
+                  placeholder="Which email works best for you..."
+                  onChange={this.handleChange}
+                  value={this.state.email}
+                />
+              </FormGroup>
+              <FormGroup>
+                <Label for="contactFormMessageField" className="form-label">Message</Label>
+                <Input type="textarea" name="message" rows="5" required
+                  id="contactFormMessageField"
+                  placeholder="What might we talk about..."
+                  onChange={this.handleChange}
+                  value={this.state.message}
+                />
+              </FormGroup>
+              <div id="recaptcha-wrapper">
+                <div className="g-recaptcha" data-sitekey="6LeHeMsUAAAAALWOkRTmh1ft2a7-QR4uguw6ImDz"></div>
+              </div>
+              <div className="submit-button-wrapper">
+                <input type="button" value="Submit" className="brand-dark-button" onClick={this.handleSubmit} />
+              </div>
             </div>
-          </div>
-          <div className="submit-button-wrapper">
-            <input type="button" value="Submit" className="brand-dark-button" onClick={this.handleSubmit} />
           </div>
         </Form>
         

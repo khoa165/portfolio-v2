@@ -1,12 +1,11 @@
-@import './Variables.scss';
+@import 'Variables';
+@import 'HelperMethods';
 
 #navigation-bar {
-
-  
-  
   .ui.inverted.menu {
     &.labeled.icon {
       width: 100px;
+      @include resize(992px, 1199px) { width: 80px; font-size: 10px; }
     }
     &.top.fixed {
       background: transparent;
@@ -14,6 +13,10 @@
       top: 15px;
       left: 82vw;
       z-index: 1234;
+      @include resize(601px, 991px) { left: 86vw; }
+    }
+    &.vertical.sidebar .item {
+      @include resize(992px, 1199px) { width: 80px; }
     }
   }
 
@@ -24,27 +27,5 @@
   .pushable:not(body) > .fixed,
   .pushable:not(body) > .pusher:after {
     position: fixed;
-  }
-
-  @media (max-width: 1199px) and (min-width: 992px) {
-    .ui.inverted.menu {
-      &.labeled.icon {
-        width: 80px;
-        font-size: 10px;
-      }
-      &.vertical.sidebar .item {
-        width: 80px;
-      }
-    }
-  }
-  
-  @media (max-width: 991px) and (min-width: 601px) {
-    .ui.inverted.top.fixed.menu {
-      background: transparent;
-      position: fixed;
-      top: 15px;
-      left: 86vw;
-      z-index: 1234;
-    }
   }
 }

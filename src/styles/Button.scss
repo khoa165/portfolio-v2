@@ -1,4 +1,4 @@
-@import './Variables.scss';
+@import 'Variables';
 
 .elegant-button, .project-button {
   background: transparent;
@@ -28,6 +28,7 @@
   padding: 4px 10px;
   color: $brand-secondary-color;
   border: 2px solid $brand-secondary-color;
+  font-family: cursive;
   &:hover {
     color: #fff;
   }
@@ -36,7 +37,9 @@
   display: inline-block;
   cursor: pointer;
   color: $brand-primary-color;
+  font-family: cursive;
   border: 1px solid $brand-primary-color;
+  border-radius: 5px;
   background-color: transparent;
   padding: 5px 15px;
   margin-top: 20px;

@@ -1,10 +1,38 @@
-@import './Variables.scss';
-@import './Button.scss';
+@import 'Variables';
+@import 'Button';
+@import 'HelperMethods';
 
 #home {
   color: $brand-primary-color;
-  height: 100vh;
-
+  position: relative;
+  .social-media {
+    z-index: 999;
+    position: absolute;
+    font-size: 40px;
+    top: 60px;
+    left: 79vw;
+    @include resize(601px, 650px) { left: 83vw; }
+    @include resize(651px, 991px) { left: 84vw; }
+    @include resize(992px, 1200px) { left: 87vw; }
+    @include resize(1201px, null) { left: 90vw; }
+    .icon {
+      display: block;
+      color: #fff;
+      height: 60px;
+      width: 60px;
+      border-radius: 8px;
+      margin: 10px;
+    }
+    .github {
+      background: #323232;
+    }
+    .linkedin {
+      background: #2766B1;
+    }
+    a:hover {
+      text-decoration: none;
+    }
+  }
   .particle-canvas {
     position: absolute;
     top: 0;
@@ -47,6 +75,8 @@
     transition: 0.1s linear all;
     line-height: 45px;
     text-align: center;
+    @include resize(null, 450px) { font-size: 15px; }
+    @include resize(null, 800px) { font-size: 20px; }
   }
   .typing-title .job-title {
     color: $brand-secondary-color;
@@ -119,17 +149,6 @@
     }
     100% {
       color: #e95555;
-    }
-  }
-  
-  @media (max-width: 800px) {
-    .typing-title {
-      font-size: 20px;
-    }
-  }
-  @media (max-width: 450px) {
-    .typing-title {
-      font-size: 15px;
     }
   }
 }

@@ -1,10 +1,12 @@
-@import './Variables.scss';
-@import './Avatar.scss';
+@import 'Variables';
+@import 'Avatar';
+@import 'HelperMethods';
 
 #about {
-  .row {
-    justify-content: flex-end;
+  .container {
+    @include resize(992px, 1199px) { padding-left: 3vw; }
   }
+  .row { justify-content: flex-end; }
   .info {
     text-align: left;
     p {
@@ -15,9 +17,7 @@
       color: grey;
       font-size: 18px;
     }
-    button {
-      margin: 0 10px;
-    }
+    button { margin: 0 10px; }
   }
 
   .profile-pic {
@@ -36,29 +36,13 @@
       color: $brand-primary-color;
       font-size: 20px;
       margin-left: 20px;
-    }
-    a:hover {
-      text-decoration: none;
-      padding-bottom: 2px;
-      border-bottom: 1px solid $brand-primary-color;
-    }
-  }
-  @media (max-width: 1199px) and (min-width: 992px) {
-    .container {
-      padding-left: 3vw;
-      .extra-info {
-        padding-left: 7vw;
+      &:hover {
+        text-decoration: none;
+        padding-bottom: 2px;
+        border-bottom: 1px solid $brand-primary-color;
       }
     }
-  }
-  @media (max-width: 1399px) and (min-width: 1200px)  {
-    .container .extra-info {
-      padding-left: 7vw;
-    }
-  }
-  @media (min-width: 1400px) {
-    .container .extra-info {
-      padding-left: 5.5vw;
-    }
+    @include resize(992px, 1399px) { padding-left: 7vw; }
+    @include resize(1400px, null) { padding-left: 5.5vw; }
   }
 }
