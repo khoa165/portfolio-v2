@@ -8,3 +8,14 @@ $background-primary-grey: #6C757D;
 $background-primary-light: #FAE8C8;
 $heading-primary-font: Georgia;
 $heading-secondary-font: serif;
+
+:export { brandPrimaryColor: $brand-primary-color; }
+:export { brandSecondaryColor: $brand-secondary-color; }
+:export { brandTertiaryColor: $brand-tertiary-color; }
+:export { backgroundPrimaryDark: $background-primary-dark; }
+:export { backgroundSecondaryDark: $background-secondary-dark; }
+:export { backgroundTertiaryDark: $background-tertiary-dark; }
+:export { backgroundPrimaryGrey: $background-primary-grey; }
+:export { backgroundPrimaryLight: $background-primary-light; }
+:export { headingPrimaryFont: $heading-primary-font; }
+:export { headingSecondaryFont: $heading-secondary-font; }

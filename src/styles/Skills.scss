@@ -1,6 +1,10 @@
-@import './Variables.scss';
+@import 'Variables';
+@import 'HelperMethods';
 
 #skills {
+  #skills-wrapper {
+    @include resize(992px, 1400px) { padding: 8vw; }
+  }
   .skill-group {
     margin-bottom: 100px;
     padding-bottom: 30px;
@@ -110,11 +114,6 @@
       -webkit-transition: all cubic-bezier(0.165, 0.84, 0.44, 1) 0.2s;
       -o-transition: all cubic-bezier(0.165, 0.84, 0.44, 1) 0.2s;
       transition: all cubic-bezier(0.165, 0.84, 0.44, 1) 0.2s;
-    }
-  }
-  @media (max-width: 1400px) and (min-width: 992px) {
-    #skills-wrapper {
-      padding: 8vw;
     }
   }
 }

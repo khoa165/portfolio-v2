@@ -1,24 +1,21 @@
-@import './Variables.scss';
-
-:export { brandPrimaryColor: $brand-primary-color; }
-:export { brandSecondaryColor: $brand-secondary-color; }
-:export { brandTertiaryColor: $brand-tertiary-color; }
-:export { backgroundPrimaryDark: $background-primary-dark; }
-:export { backgroundSecondaryDark: $background-secondary-dark; }
-:export { backgroundTertiaryDark: $background-tertiary-dark; }
-:export { backgroundPrimaryGrey: $background-primary-grey; }
-:export { backgroundPrimaryLight: $background-primary-light; }
-:export { headingPrimaryFont: $heading-primary-font; }
-:export { headingSecondaryFont: $heading-secondary-font; }
+@import 'Variables';
 
 body, html {  
+  margin: 0;
+  padding: 0;
   -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
   -moz-animation: fadein 3s; /* Firefox < 16 */
   -ms-animation: fadein 3s; /* Internet Explorer */
   -o-animation: fadein 3s; /* Opera < 12.1 */
   animation: fadein 3s;
-
   scroll-behavior: smooth;
+}
+
+body, html, *, *:before, *:after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -webkit-overflow-scrolling: touch;
+  position: relative;
 }
 
 @keyframes fadein {
@@ -50,7 +47,7 @@ body, html {
   to   { opacity: 1; }
 }
 
-/* SCROLLBAR */
+/* Scrollbar */
 ::-webkit-scrollbar {
   width: 20px;
 }
@@ -68,20 +65,4 @@ body, html {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: $brand-primary-color;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-html {
-  box-sizing: border-box;
-  height: 100vh;
-}
-
-*, *:before, *:after {
-  box-sizing: border-box;
 }
