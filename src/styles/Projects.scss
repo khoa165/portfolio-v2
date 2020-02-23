@@ -22,7 +22,11 @@
       -webkit-transform: translate(-50%);
       -ms-transform: translate(-50%);
       transform: translate(-50%);
-      @include resize(null, 991px) { left: 25px; width: 15px; height: 15px; }
+      @include resize(null, 991px) {
+        left: 25px;
+        width: 15px;
+        height: 15px;
+      }
     }
     div:nth-child(2) {
       left: 50%;
@@ -32,7 +36,11 @@
       -webkit-transform: translate(-50%);
       -ms-transform: translate(-50%);
       transform: translate(-50%);
-      @include resize(null, 991px) { left: 25px; width: 25px; height: 25px; }
+      @include resize(null, 991px) {
+        left: 25px;
+        width: 25px;
+        height: 25px;
+      }
     }
     div:nth-child(3) {
       left: 50%;
@@ -42,7 +50,11 @@
       -webkit-transform: translate(-50%);
       -ms-transform: translate(-50%);
       transform: translate(-50%);
-      @include resize(null, 991px) { left: 25px; width: 35px; height: 35px; }
+      @include resize(null, 991px) {
+        left: 25px;
+        width: 35px;
+        height: 35px;
+      }
     }
   }
   ul {
@@ -58,7 +70,9 @@
       margin: 0 auto;
       background: $brand-primary-color;
       list-style: none;
-      @include resize(null, 991px) { margin-left: 20px; }
+      @include resize(null, 991px) {
+        margin-left: 20px;
+      }
       &:first-child {
         padding-top: 20px;
       }
@@ -70,11 +84,15 @@
         -webkit-transition: all 0.2s linear;
         -o-transition: all 0.2s linear;
         transition: all 0.2s linear;
-        @include resize(992px, 1060px) { width: 375px; margin-left: -10px; }
+        @include resize(992px, 1060px) {
+          width: 375px;
+          margin-left: -10px;
+        }
         &:before {
           left: -15px;
           border-width: 8px 16px 8px 0;
-          border-color: transparent $background-primary-light transparent transparent;
+          border-color: transparent $background-primary-light transparent
+            transparent;
         }
       }
       &:nth-child(even) .project-card {
@@ -85,12 +103,18 @@
         -webkit-transition: all 0.2s linear;
         -o-transition: all 0.2s linear;
         transition: all 0.2s linear;
-        @include resize(null, 991px) { left: 40px; }
-        @include resize(992px, 1060px) { width: 375px; margin-left: 35px; }
+        @include resize(null, 991px) {
+          left: 40px;
+        }
+        @include resize(992px, 1060px) {
+          width: 375px;
+          margin-left: 35px;
+        }
         &:before {
           right: -15px;
           border-width: 8px 0px 8px 16px;
-          border-color: transparent transparent transparent $background-primary-light;
+          border-color: transparent transparent transparent
+            $background-primary-light;
           @include resize(null, 991px) {
             left: -15px;
             border-width: 8px 16px 8px 0;
@@ -126,7 +150,9 @@
         -o-transition: all 0.3s ease-in-out;
         transition: all 0.3s ease-in-out;
         border-radius: 5px;
-        @include resize(null, 991px) { width: calc(100vw - 90px); }
+        @include resize(null, 991px) {
+          width: calc(100vw - 90px);
+        }
         &:before {
           content: '';
           position: absolute;
@@ -142,18 +168,15 @@
         .project-description {
           text-align: left;
           margin-bottom: 15px;
+          img {
+            float: left;
+          }
         }
         img {
           border-radius: 8px;
           width: 30%;
           padding: 5px;
           margin-right: 10px;
-        }
-        .project-details {
-          display: flex;
-          align-items: flex-start;
-          justify-content: space-between;
-          margin-bottom: 20px;
         }
         .project-buttons {
           text-align: right;
@@ -171,6 +194,7 @@
             border: 2px solid $brand-primary-color;
             color: #000;
           }
+          margin-bottom: 15px;
         }
         &:hover {
           bottom: 10px;
