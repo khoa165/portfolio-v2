@@ -13,6 +13,9 @@ class Project extends React.Component {
               className='ui image'
               src={this.props.image}
             />
+            {this.props.note ? (
+              <p className='font-weight-bold'>#{this.props.note}</p>
+            ) : null}
             {this.props.descriptions.map((description, index) => {
               return <p key={index}>{description}</p>;
             })}

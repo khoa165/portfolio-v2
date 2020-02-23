@@ -12,6 +12,7 @@ const projects = [
       'Authenticate routes with JSON Web Token, validate with Express-validator middleware, and conduct testing with Postman.',
       'Implement user interface with React and manage application with Redux.'
     ],
+    note: 'ProjectUnderDevelopment',
     skills: [
       'Node.js',
       'Express.js',
@@ -24,6 +25,52 @@ const projects = [
       'Reactstrap',
       'Redux'
     ]
+  },
+  {
+    title: 'Intouch 4ever',
+    image:
+      'https://res.cloudinary.com/khoa165/image/upload/q_100/v1582449599/portfolio/contact_c1w7ky.svg',
+    descriptions: [
+      'Develop API endpoints using Node.js, Express.js, and MongoDB to build a simple contact manager app.',
+      'Authenticate routes with JSON Web Token, validate with Express-validator middleware, and conduct testing with Postman.',
+      'Implement user interface with React with Hooks and Context API.'
+    ],
+    skills: [
+      'Node.js',
+      'Express.js',
+      'MongoDB',
+      'API development',
+      'JWT authentication',
+      'Express-validator',
+      'Postman testing',
+      'React',
+      'Reactstrap',
+      'Heroku'
+    ],
+    source: 'https://github.com/khoa165/contact-manager',
+    demo: 'http://intouch4ever.herokuapp.com/login'
+  },
+  {
+    title: 'Yolo Adventure',
+    image:
+      'https://res.cloudinary.com/khoa165/image/upload/q_100/v1582447675/portfolio/adventure.svg',
+    descriptions: [
+      'Develop server side using Node.js, Express.js, and MongoDB to build an app for campgrounds review.',
+      'Authenticate routes with Passport.js and utilize Google Map API for location.'
+    ],
+    skills: [
+      'Node.js',
+      'Express.js',
+      'MongoDB',
+      'Geocoder',
+      'Passport.js authentication',
+      'Google Map API',
+      'HTML | CSS | JS',
+      'Bootstrap',
+      'Heroku'
+    ],
+    source: 'https://github.com/khoa165/yolo-adventure',
+    demo: 'https://yoloadventure.herokuapp.com/'
   },
   {
     title: 'BuddE Network',
@@ -40,6 +87,18 @@ const projects = [
       'Graph data structure'
     ],
     source: 'https://github.com/khoa165/BuddENetwork'
+  },
+  {
+    title: 'Dev Stalker',
+    image:
+      'https://res.cloudinary.com/khoa165/image/upload/v1582447750/portfolio/dev.svg',
+    descriptions: [
+      'Built a website to "stalk" other GitHub developers (basic info and public repositories) using data GitHub API',
+      "Managed application's states with React with Hooks and Context API."
+    ],
+    skills: ['GitHub API', 'React', 'Reactstrap', 'Context API'],
+    source: 'https://github.com/khoa165/dev-stalker',
+    demo: 'https://devstalker.netlify.com/'
   },
   {
     title: 'Buddy Up',
