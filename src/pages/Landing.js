@@ -22,6 +22,9 @@ const Landing = () => {
       >
         <Home />
       </Section>
+      <Section className='stats' id='stats' background='#990047' width='auto'>
+        <Stats />
+      </Section>
       <Section
         className='about'
         id='about'
@@ -33,9 +36,6 @@ const Landing = () => {
         headingMargin='20px auto 50px auto'
       >
         <About />
-      </Section>
-      <Section className='stats' id='stats' background='#990047' width='auto'>
-        <Stats />
       </Section>
       <Section
         className='projects'
