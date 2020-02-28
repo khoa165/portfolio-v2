@@ -1,6 +1,7 @@
 @import 'Variables';
 
-body, html {  
+body,
+html {
   margin: 0;
   padding: 0;
   -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
@@ -11,7 +12,11 @@ body, html {
   scroll-behavior: smooth;
 }
 
-body, html, *, *:before, *:after {
+body,
+html,
+*,
+*:before,
+*:after {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -webkit-overflow-scrolling: touch;
@@ -19,32 +24,52 @@ body, html, *, *:before, *:after {
 }
 
 @keyframes fadein {
-  from { opacity: 0; }
-  to   { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* Firefox < 16 */
 @-moz-keyframes fadein {
-  from { opacity: 0; }
-  to   { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* Safari, Chrome and Opera > 12.1 */
 @-webkit-keyframes fadein {
-  from { opacity: 0; }
-  to   { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* Internet Explorer */
 @-ms-keyframes fadein {
-  from { opacity: 0; }
-  to   { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* Opera < 12.1 */
 @-o-keyframes fadein {
-  from { opacity: 0; }
-  to   { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* Scrollbar */

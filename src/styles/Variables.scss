@@ -1,21 +1,41 @@
-$brand-primary-color: #08FDD8;
-$brand-secondary-color: #FF4B4B;
-$brand-tertiary-color: #FFCC00;
-$background-primary-dark: #1D1D1D;
+$brand-primary-color: #08fdd8;
+$brand-secondary-color: #ff4b4b;
+$brand-tertiary-color: #ffcc00;
+$background-primary-dark: #1d1d1d;
 $background-secondary-dark: #252525;
 $background-tertiary-dark: #333;
-$background-primary-grey: #6C757D;
-$background-primary-light: #FAE8C8;
+$background-primary-grey: #6c757d;
+$background-primary-light: #fae8c8;
 $heading-primary-font: Georgia;
 $heading-secondary-font: serif;
 
-:export { brandPrimaryColor: $brand-primary-color; }
-:export { brandSecondaryColor: $brand-secondary-color; }
-:export { brandTertiaryColor: $brand-tertiary-color; }
-:export { backgroundPrimaryDark: $background-primary-dark; }
-:export { backgroundSecondaryDark: $background-secondary-dark; }
-:export { backgroundTertiaryDark: $background-tertiary-dark; }
-:export { backgroundPrimaryGrey: $background-primary-grey; }
-:export { backgroundPrimaryLight: $background-primary-light; }
-:export { headingPrimaryFont: $heading-primary-font; }
-:export { headingSecondaryFont: $heading-secondary-font; }
+:export {
+  brandPrimaryColor: $brand-primary-color;
+}
+:export {
+  brandSecondaryColor: $brand-secondary-color;
+}
+:export {
+  brandTertiaryColor: $brand-tertiary-color;
+}
+:export {
+  backgroundPrimaryDark: $background-primary-dark;
+}
+:export {
+  backgroundSecondaryDark: $background-secondary-dark;
+}
+:export {
+  backgroundTertiaryDark: $background-tertiary-dark;
+}
+:export {
+  backgroundPrimaryGrey: $background-primary-grey;
+}
+:export {
+  backgroundPrimaryLight: $background-primary-light;
+}
+:export {
+  headingPrimaryFont: $heading-primary-font;
+}
+:export {
+  headingSecondaryFont: $heading-secondary-font;
+}

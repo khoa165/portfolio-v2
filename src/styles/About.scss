@@ -4,9 +4,13 @@
 
 #about {
   .container {
-    @include resize(992px, 1199px) { padding-left: 3vw; }
+    @include resize(992px, 1199px) {
+      padding-left: 3vw;
+    }
   }
-  .row { justify-content: flex-end; }
+  .row {
+    justify-content: flex-end;
+  }
   .info {
     text-align: left;
     p {
@@ -17,11 +21,14 @@
       color: grey;
       font-size: 18px;
     }
-    button { margin: 0 10px; }
+    button {
+      margin: 0 10px;
+    }
   }
 
   .profile-pic {
     padding-left: 50px;
+    padding-bottom: 140px;
     border-left: 1px solid $brand-primary-color;
   }
 
@@ -42,7 +49,11 @@
         border-bottom: 1px solid $brand-primary-color;
       }
     }
-    @include resize(992px, 1399px) { padding-left: 7vw; }
-    @include resize(1400px, null) { padding-left: 5.5vw; }
+    @include resize(992px, 1399px) {
+      padding-left: 7vw;
+    }
+    @include resize(1400px, null) {
+      padding-left: 5.5vw;
+    }
   }
 }

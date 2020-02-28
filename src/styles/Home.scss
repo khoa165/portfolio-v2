@@ -11,10 +11,18 @@
     font-size: 40px;
     top: 60px;
     left: 79vw;
-    @include resize(601px, 650px) { left: 83vw; }
-    @include resize(651px, 991px) { left: 84vw; }
-    @include resize(992px, 1200px) { left: 87vw; }
-    @include resize(1201px, null) { left: 90vw; }
+    @include resize(601px, 650px) {
+      left: 83vw;
+    }
+    @include resize(651px, 991px) {
+      left: 84vw;
+    }
+    @include resize(992px, 1200px) {
+      left: 87vw;
+    }
+    @include resize(1201px, null) {
+      left: 90vw;
+    }
     .icon {
       display: block;
       color: #fff;
@@ -27,7 +35,7 @@
       background: #323232;
     }
     .linkedin {
-      background: #2766B1;
+      background: #2766b1;
     }
     a:hover {
       text-decoration: none;
@@ -75,8 +83,12 @@
     transition: 0.1s linear all;
     line-height: 45px;
     text-align: center;
-    @include resize(null, 450px) { font-size: 15px; }
-    @include resize(null, 800px) { font-size: 20px; }
+    @include resize(null, 450px) {
+      font-size: 15px;
+    }
+    @include resize(null, 800px) {
+      font-size: 20px;
+    }
   }
   .typing-title .job-title {
     color: $brand-secondary-color;
@@ -93,7 +105,7 @@
     -webkit-animation: blink 1s linear infinite forwards;
     animation: blink 1s linear infinite forwards;
   }
-  
+
   @-webkit-keyframes blink {
     0% {
       opacity: 1;
@@ -105,7 +117,7 @@
       opacity: 1;
     }
   }
-  
+
   @keyframes blink {
     0% {
       opacity: 1;
