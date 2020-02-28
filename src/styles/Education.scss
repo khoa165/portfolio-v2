@@ -2,8 +2,12 @@
 
 #education {
   .row {
-    @include resize(992px, 1199px) { justify-content: center; }
-    @include resize(1200px, null) { justify-content: space-evenly; }
+    @include resize(992px, 1199px) {
+      justify-content: center;
+    }
+    @include resize(1200px, null) {
+      justify-content: space-evenly;
+    }
   }
   .education-card {
     display: flex;
@@ -11,7 +15,8 @@
     justify-content: center;
     position: relative;
     text-align: right;
-    &:first-child, &:nth-child(2) {
+    &:first-child,
+    &:nth-child(2) {
       margin-bottom: 80px;
     }
     .card-title {
@@ -27,20 +32,25 @@
       font-style: italic;
     }
     &.red-hexagon {
-      border-bottom: 7px solid #EF5145;
+      border-bottom: 7px solid #ef5145;
       height: 240px;
     }
     &.yellow-hexagon {
-      border-bottom: 7px solid #FFC107;
+      border-bottom: 7px solid #ffc107;
       height: 220px;
     }
     &.blue-hexagon {
-      border-bottom: 7px solid #007BFF;
+      border-bottom: 7px solid #007bff;
       height: 200px;
     }
-    @include resize(null, 991px) { margin-left: 0; width: 100%; }
-    @include resize(992px, 1199px) { width: 110%; }
-    @include resize(1200px, null) { 
+    @include resize(null, 991px) {
+      margin-left: 0;
+      width: 100%;
+    }
+    @include resize(992px, 1199px) {
+      width: 110%;
+    }
+    @include resize(1200px, null) {
       margin-left: 35px;
       &:first-child {
         width: 130%;
@@ -48,9 +58,9 @@
       &:nth-child(2) {
         width: 110%;
       }
-      &:nth-child(2){
+      &:nth-child(2) {
         width: 90%;
-      } 
+      }
     }
   }
   .hexagon {
@@ -59,8 +69,9 @@
     position: absolute;
     left: -1px;
     top: -29px;
-    &:before, &:after {
-      content: "";
+    &:before,
+    &:after {
+      content: '';
       position: absolute;
       left: 0;
       width: 0;
@@ -75,30 +86,30 @@
       bottom: -25px;
     }
     &.red-hexagon {
-      background: #EF5145;
+      background: #ef5145;
       &:before {
-        border-bottom: 25px solid #EF5145;
+        border-bottom: 25px solid #ef5145;
       }
       &:after {
-        border-top: 25px solid #EF5145;
+        border-top: 25px solid #ef5145;
       }
     }
     &.yellow-hexagon {
-      background: #FFC107;
+      background: #ffc107;
       &:before {
-        border-bottom: 25px solid #FFC107;
+        border-bottom: 25px solid #ffc107;
       }
       &:after {
-        border-top: 25px solid #FFC107;
+        border-top: 25px solid #ffc107;
       }
     }
     &.blue-hexagon {
-      background: #007BFF;
+      background: #007bff;
       &:before {
-        border-bottom: 25px solid #007BFF;
+        border-bottom: 25px solid #007bff;
       }
       &:after {
-        border-top: 25px solid #007BFF;
+        border-top: 25px solid #007bff;
       }
     }
   }

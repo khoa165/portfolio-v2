@@ -1,0 +1,23 @@
+@import 'Variables';
+@import 'HelperMethods';
+
+section#stats {
+  color: #fff;
+  font-weight: bold;
+  padding: 100px 0;
+  margin-left: 100px;
+  @include resize(992px, 1199px) {
+    margin-left: 80px;
+  }
+  .count-up {
+    padding: 50px 0;
+    text-align: center;
+    border-right: 1px solid #fff;
+  }
+  p {
+    color: #c980a3;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-top: 15px;
+  }
+}

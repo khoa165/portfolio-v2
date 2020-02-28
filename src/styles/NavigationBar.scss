@@ -5,7 +5,10 @@
   .ui.inverted.menu {
     &.labeled.icon {
       width: 100px;
-      @include resize(992px, 1199px) { width: 80px; font-size: 10px; }
+      @include resize(992px, 1199px) {
+        width: 80px;
+        font-size: 10px;
+      }
     }
     &.top.fixed {
       background: transparent;
@@ -13,10 +16,14 @@
       top: 15px;
       left: 82vw;
       z-index: 1234;
-      @include resize(601px, 991px) { left: 86vw; }
+      @include resize(601px, 991px) {
+        left: 86vw;
+      }
     }
     &.vertical.sidebar .item {
-      @include resize(992px, 1199px) { width: 80px; }
+      @include resize(992px, 1199px) {
+        width: 80px;
+      }
     }
   }
 

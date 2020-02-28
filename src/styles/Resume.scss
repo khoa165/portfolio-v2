@@ -10,7 +10,10 @@
     height: 0;
     max-width: 80%;
     padding-bottom: 57%;
-    @include resize(null, 991px) { max-width: 80%; padding-bottom: 90%; }
+    @include resize(null, 991px) {
+      max-width: 80%;
+      padding-bottom: 90%;
+    }
   }
   .iframer {
     position: absolute;
@@ -19,6 +22,9 @@
     width: 60%;
     height: 100%;
     border-radius: 10px;
-    @include resize(null, 991px) { left: 5%; width: 90%; }
+    @include resize(null, 991px) {
+      left: 5%;
+      width: 90%;
+    }
   }
 }

@@ -9,7 +9,7 @@ class Section extends React.Component {
         className={`section ${this.props.className}`}
         style={{
           minHeight: this.props.height,
-          width: '100%',
+          width: this.props.width || '100%',
           background: this.props.background
         }}
       >
