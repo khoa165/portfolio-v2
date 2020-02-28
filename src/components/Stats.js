@@ -1,5 +1,5 @@
-import React from 'react';
-import CountUp, { startAnimation } from 'react-countup';
+import React, { useState } from 'react';
+import CountUp from 'react-countup';
 import VisibilitySensor from 'react-visibility-sensor';
 import { Row, Col } from 'reactstrap';
 import '../styles/Stats.scss';
@@ -23,33 +23,42 @@ const stats = [
   }
 ];
 
-class Stats extends React.Component {
-  render() {
-    return (
-      <Row>
-        {stats.map((stat, index) => {
-          return (
-            <Col md='6' xl='3' className='count-up' key={index}>
-              <CountUp
-                start={0}
-                end={stat.number}
-                duration={5}
-                separator={','}
-                redraw={true}
-              >
-                {({ countUpRef, start }) => (
-                  <VisibilitySensor onChange={start} delayedCall>
+const Stats = () => {
+  const [viewPortEntered, setViewPortEntered] = useState(false);
+  return (
+    <Row>
+      {stats.map((stat, index) => {
+        return (
+          <Col md='6' xl='3' className='count-up' key={index}>
+            <CountUp
+              start={viewPortEntered ? null : 0}
+              end={stat.number}
+              duration={5}
+              separator={','}
+              redraw={false}
+            >
+              {({ countUpRef }) => {
+                return (
+                  <VisibilitySensor
+                    active={!viewPortEntered}
+                    onChange={isVisible => {
+                      if (isVisible) {
+                        setViewPortEntered(true);
+                      }
+                    }}
+                    delayedCall
+                  >
                     <span ref={countUpRef} className='display-3' />
                   </VisibilitySensor>
-                )}
-              </CountUp>
-              <p>{stat.text}</p>
-            </Col>
-          );
-        })}
-      </Row>
-    );
-  }
-}
+                );
+              }}
+            </CountUp>
+            <p>{stat.text}</p>
+          </Col>
+        );
+      })}
+    </Row>
+  );
+};
 
 export default Stats;
