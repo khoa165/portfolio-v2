@@ -23,7 +23,7 @@ class About extends React.Component {
       <div>
         <Container>
           <Row className="align-items-start">
-            <Col xs="12" lg="7" className="info">
+            <Col xs="12" lg="7" className="info order-2 order-lg-1">
               <p>I am a sophomore studying Computer Science at the University of Wisconsin at Madison. I am actively looking for internships in software development/engineering for Summer 2020 and Fall 2020.</p>
               <p>I enjoy building websites using MERN (MongoDB - Express.js - React - Node.js) and Ruby on Rails stacks. Working as a Student Web and Application Developer for Department of Medical Physics, I also familiarize myself with PHP and MySQL, maintaining existing websites and building new internal apps to serve around 250 students and faculties of the department.</p>
               <p>During my time as a college student, I have been taking challenging computer science coursework that strengthens my programming development as well as data structures and algorithms skills.</p>
@@ -34,7 +34,7 @@ class About extends React.Component {
                 </p>
               : null}
             </Col>
-            <Col lg="4" className="profile-pic d-none d-lg-block">
+            <Col lg="4" className="profile-pic order-1 order-lg-2">
               <img src="https://res.cloudinary.com/khoa165/image/upload/q_100/v1577895922/portfolio/avatar.jpg" alt="My avatar" className="avatar" />
             </Col>
           </Row>
