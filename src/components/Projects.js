@@ -180,11 +180,12 @@ class Projects extends React.Component {
   isInView = item => {
     const rect = item.getBoundingClientRect();
     return (
-      rect.top >= 0 &&
-      rect.left >= 0 &&
-      rect.bottom <=
+      rect.top + 80 >= 0 &&
+      rect.left + 30 >= 0 &&
+      rect.bottom - 80 <=
         (window.innerHeight || document.documentElement.clientHeight) &&
-      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+      rect.right - 30 <=
+        (window.innerWidth || document.documentElement.clientWidth)
     );
   };
   render() {
