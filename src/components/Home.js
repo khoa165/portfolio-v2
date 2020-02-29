@@ -49,6 +49,13 @@ class Home extends React.Component {
           >
             <Icon name='linkedin' />
           </a>
+          <a
+            href='https://khoa165.github.io/'
+            rel='noopener noreferrer'
+            target='_blank'
+          >
+            <Icon name='blogger' />
+          </a>
         </div>
         <div onClick={this.speedUpTyper}>
           <Particles
