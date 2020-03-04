@@ -29,8 +29,8 @@ class About extends React.Component {
               <p>During my time as a college student, I have been taking challenging computer science coursework that strengthens my programming development as well as data structures and algorithms skills.</p>
               {!this.state.expandMoreInfo ?
                 <p className="see-more-statement">If you are not bored yet, 
-                  <Button size="sm" onClick={this.toggle}>Read more</Button> 
-                  about my coding journey.
+                  <Button size="sm" onClick={this.toggle}>Expand</Button> 
+                  to read more about my coding journey.
                 </p>
               : null}
             </Col>
