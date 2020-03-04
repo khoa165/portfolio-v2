@@ -87,8 +87,8 @@ class Experiences extends React.Component {
         <Experience {...mainExperience} />
         {!this.state.expandMoreExperience ?
           <p className="see-more-statement">If you are not bored yet, 
-            <Button size="sm" onClick={() => this.toggle()}>Check out</Button> 
-            my other experiences.
+            <Button size="sm" onClick={() => this.toggle()}>Expand</Button> 
+            to learn more about my other experiences.
           </p>
         : null}
         {this.state.expandMoreExperience ? 
