@@ -24,7 +24,7 @@ class About extends React.Component {
         <Container>
           <Row className="align-items-start">
             <Col xs="12" lg="7" className="info order-2 order-lg-1">
-              <p>I am a sophomore studying Computer Science at the University of Wisconsin at Madison. I am actively looking for internships in software development/engineering for Summer 2020 and Fall 2020.</p>
+              <p>I am a sophomore studying Computer Science at the University of Wisconsin at Madison. I am actively looking for internships in software development/engineering for Fall 2020 / Spring 2021 / Summer 2021.</p>
               <p>I enjoy building websites using MERN (MongoDB - Express.js - React - Node.js) and Ruby on Rails stacks. Working as a Student Web and Application Developer for Department of Medical Physics, I also familiarize myself with PHP and MySQL, maintaining existing websites and building new internal apps to serve around 250 students and faculties of the department.</p>
               <p>During my time as a college student, I have been taking challenging computer science coursework that strengthens my programming development as well as data structures and algorithms skills.</p>
               {!this.state.expandMoreInfo ?
