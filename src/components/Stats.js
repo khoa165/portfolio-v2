@@ -26,38 +26,44 @@ const stats = [
 const Stats = () => {
   const [viewPortEntered, setViewPortEntered] = useState(false);
   return (
-    <Row>
-      {stats.map((stat, index) => {
-        return (
-          <Col md='6' xl='3' className='count-up' key={index}>
-            <CountUp
-              start={viewPortEntered ? null : 0}
-              end={stat.number}
-              duration={5}
-              separator={','}
-              redraw={false}
-            >
-              {({ countUpRef }) => {
-                return (
-                  <VisibilitySensor
-                    active={!viewPortEntered}
-                    onChange={isVisible => {
-                      if (isVisible) {
-                        setViewPortEntered(true);
-                      }
-                    }}
-                    delayedCall
-                  >
-                    <span ref={countUpRef} className='display-3' />
-                  </VisibilitySensor>
-                );
-              }}
-            </CountUp>
-            <p>{stat.text}</p>
-          </Col>
-        );
-      })}
-    </Row>
+    <div align='center'>
+      <h3>
+        I was never passionate about anything, <br />
+        till 18 months ago, I learned to code.
+      </h3>
+      <Row>
+        {stats.map((stat, index) => {
+          return (
+            <Col md='6' xl='3' className='count-up' key={index}>
+              <CountUp
+                start={viewPortEntered ? null : 0}
+                end={stat.number}
+                duration={5}
+                separator={','}
+                redraw={false}
+              >
+                {({ countUpRef }) => {
+                  return (
+                    <VisibilitySensor
+                      active={!viewPortEntered}
+                      onChange={isVisible => {
+                        if (isVisible) {
+                          setViewPortEntered(true);
+                        }
+                      }}
+                      delayedCall
+                    >
+                      <span ref={countUpRef} className='display-3' />
+                    </VisibilitySensor>
+                  );
+                }}
+              </CountUp>
+              <p>{stat.text}</p>
+            </Col>
+          );
+        })}
+      </Row>
+    </div>
   );
 };
 
