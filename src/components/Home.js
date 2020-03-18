@@ -56,6 +56,13 @@ class Home extends React.Component {
           >
             <Icon name='blogger' />
           </a>
+          <a
+            href='https://www.hackerrank.com/khoa1652000'
+            rel='noopener noreferrer'
+            target='_blank'
+          >
+            <i className='fab fa-hackerrank'></i>
+          </a>
         </div>
         <div onClick={this.speedUpTyper}>
           <Particles
