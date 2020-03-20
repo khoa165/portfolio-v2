@@ -112,7 +112,7 @@ class Home extends React.Component {
             >
               Hello, I'm Khoa Thien Le (Harry)
               <br />
-              <span className='job-title'>Aspiring Software Developer</span>
+              <span className='job-title'>Junior Software Developer</span>
               <Cursor show={true} element='|' />
             </Typist>
             <button
