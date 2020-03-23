@@ -65,7 +65,7 @@ class Home extends React.Component {
           </a>
         </div>
         <div onClick={this.speedUpTyper}>
-          <Particles
+          {/* <Particles
             className='particle-canvas'
             params={{
               particles: {
@@ -100,7 +100,7 @@ class Home extends React.Component {
               },
               retina_detect: true
             }}
-          />
+          /> */}
 
           <div className='container'>
             <Typist

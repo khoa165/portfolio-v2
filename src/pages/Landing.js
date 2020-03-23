@@ -22,9 +22,6 @@ const Landing = () => {
       >
         <Home />
       </Section>
-      <Section className='stats' id='stats' background='#990047' width='auto'>
-        <Stats />
-      </Section>
       <Section
         className='about'
         id='about'
@@ -36,6 +33,15 @@ const Landing = () => {
         headingMargin='20px auto 50px auto'
       >
         <About />
+      </Section>
+      <Section
+        className='stats'
+        id='stats'
+        background='#990047'
+        width='auto'
+        height='30vh'
+      >
+        <Stats />
       </Section>
       <Section
         className='projects'
@@ -62,18 +68,6 @@ const Landing = () => {
         <Experiences />
       </Section>
       <Section
-        className='education'
-        id='education'
-        height='100vh'
-        padding='150px 0 100px 0'
-        heading='EDUCATION'
-        background={colors.backgroundPrimaryDark}
-        headingColor={colors.brandPrimaryColor}
-        headingMargin='20px auto 100px auto'
-      >
-        <Education />
-      </Section>
-      <Section
         className='skills'
         id='skills'
         height='100vh'
@@ -84,6 +78,18 @@ const Landing = () => {
         headingMargin='20px auto 100px auto'
       >
         <Skills />
+      </Section>
+      <Section
+        className='education'
+        id='education'
+        height='100vh'
+        padding='150px 0 100px 0'
+        heading='EDUCATION'
+        background={colors.backgroundPrimaryDark}
+        headingColor={colors.brandPrimaryColor}
+        headingMargin='20px auto 100px auto'
+      >
+        <Education />
       </Section>
       <Section
         className='resume'
