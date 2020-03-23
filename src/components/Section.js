@@ -6,7 +6,9 @@ class Section extends React.Component {
     return (
       <section
         id={this.props.id}
-        className={`section ${this.props.className}`}
+        className={`section ${this.props.id} ${
+          this.props.onMenu ? 'menu-item' : null
+        }`}
         style={{
           minHeight: this.props.height,
           width: this.props.width || '100%',

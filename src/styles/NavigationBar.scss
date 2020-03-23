@@ -21,6 +21,9 @@
       }
     }
     &.vertical.sidebar .item {
+      &.active {
+        background: $brand-primary-color;
+      }
       @include resize(992px, 1199px) {
         width: 80px;
       }

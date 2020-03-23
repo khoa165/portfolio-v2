@@ -1,30 +1,63 @@
-import React from 'react';
-import {Menu, Sidebar, Icon} from 'semantic-ui-react';
-import {Link} from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { Menu, Sidebar, Icon } from 'semantic-ui-react';
+import { Link } from 'react-router-dom';
 
-class NavigationBarDesktop extends React.Component {
-  render() {
-    return(
-      <div>
-        <Sidebar
-          as={Menu} animation='overlay'
-          direction='left' icon='labeled'
-          inverted vertical
-          visible={true} width='thin'>
-          {this.props.items.map((item, index) => {
-            return (
-              <Menu.Item as={Link} to={item.link} key={index}
-                onClick={(e) => this.props.goToSection(e, item.text.toLowerCase())}>
-                <Icon name={item.iconName} />
-                {item.text}
-              </Menu.Item>
-            );
-          })}          
-        </Sidebar>
-        {this.props.children}
-      </div>
-    );
-  }
-}
+const NavigationBarDesktop = props => {
+  const checkActiveSection = () => {
+    const sections = document.querySelectorAll('.section.menu-item');
+    sections.forEach(section => {
+      const name = '.' + section.id + '-item';
+      const item = document.querySelector(name);
+      item.classList.remove('active');
+      const rect = section.getBoundingClientRect();
+      if (
+        rect.top - 0.5 * window.innerHeight < 0 &&
+        rect.bottom - 0.5 * window.innerHeight > 0
+      ) {
+        item.classList.add('active');
+      }
+    });
+  };
+  useEffect(() => {
+    window.addEventListener('scroll', checkActiveSection);
+    window.addEventListener('load', checkActiveSection);
+    window.addEventListener('resize', checkActiveSection);
+    return () => {
+      window.removeEventListener('scroll', checkActiveSection);
+      window.removeEventListener('load', checkActiveSection);
+      window.removeEventListener('resize', checkActiveSection);
+    };
+  }, []);
+  return (
+    <div>
+      <Sidebar
+        as={Menu}
+        animation='overlay'
+        direction='left'
+        icon='labeled'
+        inverted
+        vertical
+        visible={true}
+        width='thin'
+      >
+        {props.items.map((item, index) => {
+          return (
+            <Menu.Item
+              as={Link}
+              to={item.link}
+              key={index}
+              className={`${item.text.toLowerCase()}-item`}
+              onClick={e => props.goToSection(e, item.text.toLowerCase())}
+            >
+              <Icon name={item.iconName} />
+              {item.text}
+            </Menu.Item>
+          );
+        })}
+      </Sidebar>
+      {props.children}
+    </div>
+  );
+};
 
 export default NavigationBarDesktop;

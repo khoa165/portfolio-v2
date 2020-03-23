@@ -15,18 +15,14 @@ const Landing = () => {
   return (
     <div>
       <Section
-        className='home'
         id='home'
         height='100vh'
         background={colors.backgroundPrimaryDark}
+        onMenu={true}
       >
         <Home />
       </Section>
-      <Section className='stats' id='stats' background='#990047' width='auto'>
-        <Stats />
-      </Section>
       <Section
-        className='about'
         id='about'
         height='100vh'
         padding='150px 0 100px 0'
@@ -34,11 +30,20 @@ const Landing = () => {
         background={colors.backgroundSecondaryDark}
         headingColor={colors.brandPrimaryColor}
         headingMargin='20px auto 50px auto'
+        onMenu={true}
       >
         <About />
       </Section>
       <Section
-        className='projects'
+        id='stats'
+        background='#990047'
+        width='auto'
+        height='30vh'
+        onMenu={false}
+      >
+        <Stats />
+      </Section>
+      <Section
         id='projects'
         height='100vh'
         padding='150px 0 100px 0'
@@ -46,11 +51,11 @@ const Landing = () => {
         background={colors.backgroundTertiaryDark}
         headingColor={colors.brandPrimaryColor}
         headingMargin='20px auto 50px auto'
+        onMenu={true}
       >
         <Projects />
       </Section>
       <Section
-        className='experiences'
         id='experiences'
         height='100vh'
         padding='150px 0 100px 0'
@@ -58,35 +63,35 @@ const Landing = () => {
         background={colors.backgroundSecondaryDark}
         headingColor={colors.brandPrimaryColor}
         headingMargin='20px auto 50px auto'
+        onMenu={true}
       >
         <Experiences />
       </Section>
       <Section
-        className='education'
-        id='education'
-        height='100vh'
-        padding='150px 0 100px 0'
-        heading='EDUCATION'
-        background={colors.backgroundPrimaryDark}
-        headingColor={colors.brandPrimaryColor}
-        headingMargin='20px auto 100px auto'
-      >
-        <Education />
-      </Section>
-      <Section
-        className='skills'
         id='skills'
         height='100vh'
         padding='150px 0 100px 0'
         heading='SKILLS'
-        background={colors.backgroundSecondaryDark}
+        background={colors.backgroundPrimaryDark}
         headingColor={colors.brandPrimaryColor}
         headingMargin='20px auto 100px auto'
+        onMenu={true}
       >
         <Skills />
       </Section>
       <Section
-        className='resume'
+        id='education'
+        height='100vh'
+        padding='150px 0 100px 0'
+        heading='EDUCATION'
+        background={colors.backgroundSecondaryDark}
+        headingColor={colors.brandPrimaryColor}
+        headingMargin='20px auto 100px auto'
+        onMenu={true}
+      >
+        <Education />
+      </Section>
+      <Section
         id='resume'
         height='100vh'
         padding='150px 0 100px 0'
@@ -94,11 +99,11 @@ const Landing = () => {
         background={colors.backgroundTertiaryDark}
         headingColor={colors.brandPrimaryColor}
         headingMargin='20px auto 100px auto'
+        onMenu={true}
       >
         <Resume />
       </Section>
       <Section
-        className='contact'
         id='contact'
         height='100vh'
         padding='150px 0 100px 0'
@@ -106,6 +111,7 @@ const Landing = () => {
         background={colors.backgroundSecondaryDark}
         headingColor={colors.brandPrimaryColor}
         headingMargin='20px auto 100px auto'
+        onMenu={true}
       >
         <ContactForm />
       </Section>
