@@ -21,9 +21,7 @@ const projects = [
       'JWT authentication',
       'Express-validator',
       'Postman testing',
-      'React',
-      'Reactstrap',
-      'Redux'
+      'Mocha, Chai, Supertest'
     ]
   },
   {
