@@ -27,10 +27,10 @@ class About extends React.Component {
             <Col xs='12' lg='7' className='info order-2 order-lg-1'>
               <p>
                 I am a sophomore studying Computer Science at the University of
-                Wisconsin at Madison. I will be working as a Software
-                Engineering Intern this summer at Pearson VUE. I am seeking for
+                Wisconsin at Madison. My Software Engineering internship with Pearson Vue
+                has been cancelled, so I am actively seeking for
                 internship or co-op opportunities in software development for
-                Fall 2020 / Spring 2021 / Summer 2021.
+                Summer/Fall 2020.
               </p>
               <p>
                 I enjoy building websites using MERN (MongoDB - Express.js -
