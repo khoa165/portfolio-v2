@@ -26,10 +26,10 @@ class About extends React.Component {
           <Row className='align-items-start'>
             <Col xs='12' lg='7' className='info order-2 order-lg-1'>
               <p>
-                I am a junio studying Computer Science at the University of
-                Wisconsin at Madison. I am seeking for internship or co-op
-                opportunities in software development for Spring 2021 / Summer
-                2021.
+                I am a junior studying Computer Science at the University of
+                Wisconsin at Madison. I am actively looking for internship
+                and/or co-op opportunities in software development for Spring
+                2021 / Summer 2021.
               </p>
               <p>
                 I enjoy building websites using MERN (MongoDB - Express.js -
