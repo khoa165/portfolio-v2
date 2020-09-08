@@ -6,21 +6,21 @@ import '../styles/Stats.scss';
 
 const stats = [
   {
-    number: 35000,
-    text: 'lines of code'
+    number: 40000,
+    text: 'lines of code',
   },
   {
-    number: 2500,
-    text: 'hours of coding'
+    number: 3000,
+    text: 'hours of coding',
   },
   {
-    number: 1000,
-    text: 'github contributions'
+    number: 1500,
+    text: 'github contributions',
   },
   {
     number: 50,
-    text: 'github repositories'
-  }
+    text: 'github repositories',
+  },
 ];
 
 const Stats = () => {
@@ -29,7 +29,7 @@ const Stats = () => {
     <div align='center'>
       <h3>
         I was never passionate about anything, <br />
-        till 18 months ago, I learned to code.
+        till 2 years ago, I learned to code.
       </h3>
       <Row>
         {stats.map((stat, index) => {
@@ -46,7 +46,7 @@ const Stats = () => {
                   return (
                     <VisibilitySensor
                       active={!viewPortEntered}
-                      onChange={isVisible => {
+                      onChange={(isVisible) => {
                         if (isVisible) {
                           setViewPortEntered(true);
                         }

@@ -6,7 +6,7 @@ import '../styles/About.scss';
 class About extends React.Component {
   state = { expandMoreInfo: false };
   toggle = () => this.setState({ expandMoreInfo: !this.state.expandMoreInfo });
-  goToAboutAndToggle = e => {
+  goToAboutAndToggle = (e) => {
     e.preventDefault();
     const about = document.querySelector('#about');
     scrollIntoView(about, {
@@ -14,8 +14,8 @@ class About extends React.Component {
       block: 'start',
       inline: 'nearest',
       duration: window.innerWidth > 499 ? 100 : 1500,
-      ease: t =>
-        t < 0.5 ? 16 * t * t * t * t * t : 1 + 16 * --t * t * t * t * t
+      ease: (t) =>
+        t < 0.5 ? 16 * t * t * t * t * t : 1 + 16 * --t * t * t * t * t,
     });
     this.toggle();
   };
@@ -26,19 +26,18 @@ class About extends React.Component {
           <Row className='align-items-start'>
             <Col xs='12' lg='7' className='info order-2 order-lg-1'>
               <p>
-                I am a sophomore studying Computer Science at the University of
-                Wisconsin at Madison. I will be working as a Software
-                Engineering Intern this summer at Pearson VUE. I am seeking for
-                internship or co-op opportunities in software development for
-                Fall 2020 / Spring 2021 / Summer 2021.
+                I am a junio studying Computer Science at the University of
+                Wisconsin at Madison. I am seeking for internship or co-op
+                opportunities in software development for Spring 2021 / Summer
+                2021.
               </p>
               <p>
                 I enjoy building websites using MERN (MongoDB - Express.js -
-                React - Node.js) and Ruby on Rails stacks. Working as a Student
-                Web and Application Developer for Department of Medical Physics,
-                I also familiarize myself with PHP and MySQL, maintaining
-                existing websites and building new internal apps to serve around
-                250 students and faculties of the department.
+                React - Node.js). Working as a Student Web and Application
+                Developer for Department of Medical Physics, I also familiarize
+                myself with PHP and MySQL, maintaining existing websites and
+                building new internal apps to serve around 250 students and
+                faculties of the department.
               </p>
               <p>
                 During my time as a college student, I have been taking

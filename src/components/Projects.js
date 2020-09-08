@@ -4,13 +4,13 @@ import '../styles/Projects.scss';
 
 const projects = [
   {
-    title: 'Power U',
+    title: 'CoffeeUp',
     image:
       'https://res.cloudinary.com/khoa165/image/upload/q_100/v1582446172/portfolio/productivity.svg',
     descriptions: [
-      'Develop API endpoints using Node.js, Express.js, and MongoDB to build an app for productivity. Upcoming features include profile builder, task manager, and task list sharing and collaboration.',
-      'Authenticate routes with JSON Web Token, validate with Express-validator middleware, and conduct testing with Postman.',
-      'Implement user interface with React and manage application with Redux.'
+      'Develop backend API using Node.js, Express.js, and MongoDB and wrote integration tests for API endpoints using Mocha, Chai and Supertest.',
+      'Set up CI/CD pipeline with GitHub Actions to automate deployment to Heroku on push',
+      'Build a user-friendly productivity app for tasks, bookmarks management and job application tracking with React and Redux',
     ],
     note: 'ProjectUnderDevelopment',
     skills: [
@@ -19,12 +19,13 @@ const projects = [
       'MongoDB',
       'API development',
       'JWT authentication',
-      'Express-validator',
-      'Postman testing',
+      'TDD with Chai, Supertest, Mocha',
       'React',
+      'Redux',
       'Reactstrap',
-      'Redux'
-    ]
+    ],
+    source: 'https://github.com/khoa165/productivity',
+    demo: 'https://coffeeup.herokuapp.com/',
   },
   {
     title: 'Intouch 4ever',
@@ -33,7 +34,7 @@ const projects = [
     descriptions: [
       'Develop API endpoints using Node.js, Express.js, and MongoDB to build a simple contact manager app.',
       'Authenticate routes with JSON Web Token, validate with Express-validator middleware, and conduct testing with Postman.',
-      'Implement user interface with React with Hooks and Context API.'
+      'Implement user interface with React with Hooks and Context API.',
     ],
     skills: [
       'Node.js',
@@ -45,10 +46,10 @@ const projects = [
       'Postman testing',
       'React',
       'Reactstrap',
-      'Heroku'
+      'Heroku',
     ],
     source: 'https://github.com/khoa165/contact-manager',
-    demo: 'http://intouch4ever.herokuapp.com/login'
+    demo: 'http://intouch4ever.herokuapp.com/login',
   },
   {
     title: 'Yolo Adventure',
@@ -56,7 +57,7 @@ const projects = [
       'https://res.cloudinary.com/khoa165/image/upload/q_100/v1582447675/portfolio/adventure.svg',
     descriptions: [
       'Develop server side using Node.js, Express.js, and MongoDB to build an app for campgrounds review.',
-      'Authenticate routes with Passport.js and utilize Google Map API for location.'
+      'Authenticate routes with Passport.js and utilize Google Map API for location.',
     ],
     skills: [
       'Node.js',
@@ -67,10 +68,10 @@ const projects = [
       'Google Map API',
       'HTML | CSS | JS',
       'Bootstrap',
-      'Heroku'
+      'Heroku',
     ],
     source: 'https://github.com/khoa165/yolo-adventure',
-    demo: 'https://yoloadventure.herokuapp.com/'
+    demo: 'https://yoloadventure.herokuapp.com/',
   },
   {
     title: 'BuddE Network',
@@ -79,14 +80,14 @@ const projects = [
     descriptions: [
       'Built a social network visualization that allows creating/removing users, adding/removing friendship between users, navigating through the network from the view of each user.',
       'Led a team of four to complete a decent final class project. Facilitated coding sessions to build prototype with Lucidchart and assist others with desiging, implementing and debugging the program.',
-      'Set up, configured, and structured the project. Managed the coding progress throughout three weeks span. Implemented interfaces, graph data structure and the majority of front end.'
+      'Set up, configured, and structured the project. Managed the coding progress throughout three weeks span. Implemented interfaces, graph data structure and the majority of front end.',
     ],
     skills: [
       'Back-end with Java',
       'Front-end with JavaFX',
-      'Graph data structure'
+      'Graph data structure',
     ],
-    source: 'https://github.com/khoa165/BuddENetwork'
+    source: 'https://github.com/khoa165/BuddENetwork',
   },
   {
     title: 'Dev Stalker',
@@ -94,11 +95,11 @@ const projects = [
       'https://res.cloudinary.com/khoa165/image/upload/v1582447750/portfolio/dev.svg',
     descriptions: [
       'Built a website to "stalk" other GitHub developers (basic info and public repositories) using data GitHub API',
-      "Managed application's states with React with Hooks and Context API."
+      "Managed application's states with React with Hooks and Context API.",
     ],
     skills: ['GitHub API', 'React', 'Reactstrap', 'Context API'],
     source: 'https://github.com/khoa165/dev-stalker',
-    demo: 'https://devstalker.netlify.com/'
+    demo: 'https://devstalker.netlify.com/',
   },
   {
     title: 'Buddy Up',
@@ -106,7 +107,7 @@ const projects = [
       'https://res.cloudinary.com/khoa165/image/upload/q_100/v1577895922/portfolio/buddies.svg',
     descriptions: [
       'Built a minimum viable product using Ruby on Rails and PostgreSQL that connects people with similar interests, focusing on 1-on-1 buddy networking and using a criteria-weighted score system to process user data.',
-      'Pitched idea and convinced others to join team. Led a team of four students using GitHub for collaboration and adopting Agile methodology to achieve an efficient 2-week sprint: daily standup and in-person interactions, Trello board for user stories/features-oriented, and flexible course of actions to ensure working software.'
+      'Pitched idea and convinced others to join team. Led a team of four students using GitHub for collaboration and adopting Agile methodology to achieve an efficient 2-week sprint: daily standup and in-person interactions, Trello board for user stories/features-oriented, and flexible course of actions to ensure working software.',
     ],
     skills: [
       'Ruby on Rails',
@@ -120,10 +121,10 @@ const projects = [
       'Devise authentication',
       'Geocoding',
       'PredictHQ API',
-      'Figma'
+      'Figma',
     ],
     demo: 'https://www.buddyup.xyz/',
-    source: 'https://github.com/khoa165/buddyUp'
+    source: 'https://github.com/khoa165/buddyUp',
   },
   {
     title: 'Pet Now',
@@ -131,7 +132,7 @@ const projects = [
       'https://res.cloudinary.com/khoa165/image/upload/q_100/v1577895922/portfolio/pet.svg',
     descriptions: [
       'Built a minimum viable product using Ruby on Rails and PostgreSQL that connects pet lovers and those who might be in need of having others take care of their pets.',
-      'Pitched idea and convinced others to join team. Led a team of four students using GitHub for collaboration and adopting Agile methodology to achieve an efficient 1-week sprint: daily standup and in-person interactions, and flexible course of actions to ensure working software.'
+      'Pitched idea and convinced others to join team. Led a team of four students using GitHub for collaboration and adopting Agile methodology to achieve an efficient 1-week sprint: daily standup and in-person interactions, and flexible course of actions to ensure working software.',
     ],
     skills: [
       'Ruby on Rails',
@@ -145,10 +146,10 @@ const projects = [
       'Devise authentication',
       'Geocoding',
       'Mapbox API',
-      'Figma'
+      'Figma',
     ],
     demo: 'https://petnow.herokuapp.com/',
-    source: 'https://github.com/khoa165/petNow'
+    source: 'https://github.com/khoa165/petNow',
   },
   {
     title: 'Fish Evolution',
@@ -156,11 +157,11 @@ const projects = [
       'https://res.cloudinary.com/khoa165/image/upload/q_100/v1577895922/portfolio/shark.svg',
     descriptions: [
       'Built a classic game of big fish capturing smaller fish to evolve using Java and Processing graphic library',
-      'Practiced Object-oriented programming concepts and project design.'
+      'Practiced Object-oriented programming concepts and project design.',
     ],
     skills: ['Back-end with Java', 'Front-end with Processing'],
-    source: 'https://github.com/khoa165/fish-evolution'
-  }
+    source: 'https://github.com/khoa165/fish-evolution',
+  },
 ];
 
 class Projects extends React.Component {
@@ -171,13 +172,13 @@ class Projects extends React.Component {
   };
   run = () => {
     const items = document.querySelectorAll('#projects-line li');
-    items.forEach(item => {
+    items.forEach((item) => {
       if (this.isInView(item)) {
         item.classList.add('show');
       }
     });
   };
-  isInView = item => {
+  isInView = (item) => {
     const rect = item.getBoundingClientRect();
     return (
       rect.top + 100 >= 0 &&
