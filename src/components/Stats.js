@@ -6,7 +6,7 @@ import '../styles/Stats.scss';
 
 const stats = [
   {
-    number: 40000,
+    number: 50000,
     text: 'lines of code',
   },
   {

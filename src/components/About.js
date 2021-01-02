@@ -26,18 +26,18 @@ class About extends React.Component {
           <Row className='align-items-start'>
             <Col xs='12' lg='7' className='info order-2 order-lg-1'>
               <p>
-                I am a junior studying Computer Science at the University of
-                Wisconsin at Madison. I am actively looking for internship
-                and/or co-op opportunities in software development for Spring
-                2021 / Summer 2021.
+                I am a junior (third-year undergraduate) at the University of
+                Wisconsin at Madison. My majors are Computer Science and Data
+                Science. I am currently looking for internship and/or co-op
+                opportunities in software development for 2021.
               </p>
               <p>
                 I enjoy building websites using MERN (MongoDB - Express.js -
                 React - Node.js). Working as a Student Web and Application
-                Developer for Department of Medical Physics, I also familiarize
-                myself with PHP and MySQL, maintaining existing websites and
-                building new internal apps to serve around 250 students and
-                faculties of the department.
+                Developer for Department of Medical Physics, I also familiarized
+                myself with PHP and MySQL. Other tech stacks that I worked with
+                before are React + Firebase, Android + Firebase, Ruby on Rails +
+                PostgreSQL.
               </p>
               <p>
                 During my time as a college student, I have been taking
