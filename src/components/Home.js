@@ -2,9 +2,9 @@ import React from 'react';
 import { Icon } from 'semantic-ui-react';
 import Typist from 'react-typist';
 import Cursor from 'react-typist';
-import Particles from 'react-particles-js';
+// import Particles from 'react-particles-js';
 import scrollIntoView from 'smooth-scroll-into-view-if-needed';
-import colors from '../styles/Variables.scss';
+// import colors from '../styles/Variables.scss';
 import '../styles/Home.scss';
 
 class Home extends React.Component {
@@ -19,7 +19,7 @@ class Home extends React.Component {
     mediaBtns.classList.remove('d-none');
     mediaBtns.classList.add('animated', 'zoomIn', 'delay-1s');
   };
-  goToContact = e => {
+  goToContact = (e) => {
     e.preventDefault();
     const contact = document.querySelector('#contact');
     scrollIntoView(contact, {
@@ -27,8 +27,8 @@ class Home extends React.Component {
       block: 'start',
       inline: 'nearest',
       duration: window.innerWidth > 499 ? 100 : 1500,
-      ease: t =>
-        t < 0.5 ? 16 * t * t * t * t * t : 1 + 16 * --t * t * t * t * t
+      ease: (t) =>
+        t < 0.5 ? 16 * t * t * t * t * t : 1 + 16 * --t * t * t * t * t,
     });
   };
   render() {
@@ -49,7 +49,7 @@ class Home extends React.Component {
           >
             <Icon name='linkedin' />
           </a>
-          <a
+          {/* <a
             href='https://khoa165.github.io/'
             rel='noopener noreferrer'
             target='_blank'
@@ -62,7 +62,7 @@ class Home extends React.Component {
             target='_blank'
           >
             <i className='fab fa-hackerrank'></i>
-          </a>
+          </a> */}
         </div>
         <div onClick={this.speedUpTyper}>
           {/* <Particles

@@ -4,15 +4,15 @@ import { Container, Button } from 'reactstrap';
 import Experience from './Experience';
 import '../styles/Experiences.scss';
 
-// const upcomingExperience = {
-//   title: 'Incoming Software Engineering Intern',
-//   location: 'Pearson VUE inc.',
-//   date: 'May 2020 - Aug 2020',
-//   summary: 'Will be updated once the internship starts.',
-//   contributions: [],
-//   projects: [],
-//   skills: []
-// };
+const upcomingExperience = {
+  title: 'Incoming Software Engineering Intern',
+  location: 'Adobe Inc.',
+  date: 'May 2021 - Aug 2021',
+  summary: 'Will be updated once the internship starts.',
+  contributions: [],
+  projects: [],
+  skills: [],
+};
 
 const mainExperience = {
   title: 'Student Web Developer',
@@ -106,7 +106,7 @@ class Experiences extends React.Component {
   render() {
     return (
       <Container>
-        {/* <Experience {...upcomingExperience} /> */}
+        <Experience {...upcomingExperience} />
         <Experience {...mainExperience} />
         {!this.state.expandMoreExperience ? (
           <p className='see-more-statement'>

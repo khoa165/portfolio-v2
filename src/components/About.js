@@ -26,17 +26,17 @@ class About extends React.Component {
           <Row className='align-items-start'>
             <Col xs='12' lg='7' className='info order-2 order-lg-1'>
               <p>
-                I am a junior (third-year undergraduate) at the University of
-                Wisconsin at Madison. My majors are Computer Science and Data
-                Science. I am currently looking for internship and/or co-op
-                opportunities in software development for 2021.
+                I am a rising senior at the University of Wisconsin at Madison
+                pursuing Computer Science and Data Science majors. I am
+                currently looking for internship and/or co-op opportunities in
+                software development for 2021 & 2022.
               </p>
               <p>
                 I enjoy building websites using MERN (MongoDB - Express.js -
-                React - Node.js). Working as a Student Web and Application
-                Developer for Department of Medical Physics, I also familiarized
-                myself with PHP and MySQL. Other tech stacks that I worked with
-                before are React + Firebase, Android + Firebase, Ruby on Rails +
+                React - Node.js). Previously working as a Student Web Developer
+                for Department of Medical Physics, I also familiarized myself
+                with PHP and MySQL. Other tech stacks that I worked with before
+                are React + Firebase, Android + Firebase, Ruby on Rails +
                 PostgreSQL.
               </p>
               <p>
@@ -133,13 +133,9 @@ class About extends React.Component {
                 <p>
                   As I challenge myself everyday to learn and grow more, I aim
                   to leverage my skills to good use and build products that
-                  serve the communities around me. I seek joy coding and working
-                  with others in the Coding for Good organization at my
-                  university where I am working on Culture Project - Explore
-                  Madison website aiming to encourage students' engagements with
-                  university/community events. Currently taking online React
-                  course, I am constantly learning new things to fulfill my
-                  dream of becoming a software developer in a near future.{' '}
+                  serve the communities around me. I am constantly learning new
+                  things to fulfill my dream of becoming a software developer in
+                  a near future.{' '}
                   <a href='#about' onClick={this.goToAboutAndToggle}>
                     See less
                   </a>
