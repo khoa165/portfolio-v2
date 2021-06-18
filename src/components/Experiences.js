@@ -17,7 +17,7 @@ const upcomingExperience = {
 const mainExperience = {
   title: 'Student Web Developer',
   location: 'UW-Madison',
-  date: 'October 2019 - now',
+  date: 'October 2019 - December 2020',
   summary:
     'Provided more than 50 hours technical support to the Department of Medical Physics.',
   contributions: [
