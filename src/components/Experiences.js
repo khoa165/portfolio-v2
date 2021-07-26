@@ -15,9 +15,15 @@ import '../styles/Experiences.scss';
 // };
 
 const mainExperience = {
+<<<<<<< HEAD
   title: 'Software Engineer Intern',
   location: 'Adobe Inc, Adobe Stock Contributor team',
   date: 'May 2021 - Aug 2021',
+=======
+  title: 'Student Web Developer',
+  location: 'UW-Madison',
+  date: 'October 2019 - December 2020',
+>>>>>>> 0cf666c8154df9fb6ff837653424e4025ca36074
   summary:
     "Drove an initiative to refactor key component's implementation to increase code readability and maintainability.",
   contributions: [
