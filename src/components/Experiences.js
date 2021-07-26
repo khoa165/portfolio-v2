@@ -4,45 +4,70 @@ import { Container, Button } from 'reactstrap';
 import Experience from './Experience';
 import '../styles/Experiences.scss';
 
-const upcomingExperience = {
-  title: 'Incoming Software Engineering Intern',
-  location: 'Adobe Inc.',
-  date: 'May 2021 - Aug 2021',
-  summary: 'Will be updated once the internship starts.',
-  contributions: [],
-  projects: [],
-  skills: [],
-};
+// const upcomingExperience = {
+//   title: '',
+//   location: '',
+//   date: '',
+//   summary: '',
+//   contributions: [],
+//   projects: [],
+//   skills: [],
+// };
 
 const mainExperience = {
-  title: 'Student Web Developer',
-  location: 'UW-Madison',
-  date: 'October 2019 - now',
+  title: 'Software Engineer Intern',
+  location: 'Adobe Inc, Adobe Stock Contributor team',
+  date: 'May 2021 - Aug 2021',
   summary:
-    'Provided more than 50 hours technical support to the Department of Medical Physics.',
+    "Drove an initiative to refactor key component's implementation to increase code readability and maintainability.",
   contributions: [
-    'Designing, implementing and maintaining source code.',
-    'Modifying, updating and improving the existing department website, content and application.',
-    'Building new web pages and internal applications using PHP, MySQL and WordPress that serve around 250 students, faculties, and staffs of the Department of Medical Physics.',
+    'Took ownership of the Asset Info Tagger refactor initiative: put together a plan, presented and gathered feedback from the team, carried out the development and testing phase, and presented the work to the Adobe Stock organization.',
+    'Built and integrated reusable UI components on top of React Spectrum to enforce Adobe brand consistency across the Adobe Stock Contributor website.',
+    'Participated in SCRUM team activities, including daily standup, refinement, sprint planning, tech discussion and code review.',
+    'Closed 22 Jira tickets and deployed over 2700-line changes into production that greatly improves site UI and accessibility.',
   ],
   projects: [
-    'Contact form with verification using jQuery, dynamic data handling using AJAX, bots-prevention with Google Recaptcha API, dashboard view with intuitive interface for administrative staffs to easily manage the submissions.',
-    'Internal nomination system with multiple files upload, verification using jQuery, dynamic data handling using AJAX for Department faculties to nominate pre-doctoral students for research support and dashboard view for administrative staffs.',
-    'Currently working and learning on how to create Wordpress Plugins for the purpose of code sharing and reusability.',
+    "Asset Info Tagger refactor initiative, including shifting from React class-based components to functional components, cleaning up key component's implementation, and adding/modifying over 80 tests to enhance code readability and maintainability.",
+    'Accessibility tickets that focus on fixing contrast ratio, aria label and role, keyboard navigation and other minor bugs to improve the accessibility of the Contributor site.',
   ],
   skills: [
-    'Working knowledge of PHP, MySQL, WordPress, HTML, CSS, JavaScript.',
-    'Ability to pick up new language and new development stack quickly.',
-    'Effective writing and communication skills.',
-    'Attention to detail, well organized.',
+    'Working knowledge of Node.js, React, Jest, Enzyme',
+    'Ability to quickly learn and build on top of a huge existing code base',
+    'Effective teamwork and communication skills.',
+    "Attention to detail to help improve site's accessibility",
     'Punctuality, reliable attendance, and flexibility.',
-    'Excellent time management skills.',
-    'Ability to work in a fast-paced, time-sensitive team environment.',
-    'Exceptional interpersonal skills and the ability to work with diverse populations.',
+    'Ability to work in a fast-paced and diverse team environment.',
   ],
+  visibility: true,
 };
 
 const extraExperiences = [
+  {
+    title: 'Student Web Developer',
+    location: 'UW-Madison',
+    date: 'October 2019 - now',
+    summary:
+      'Built new web applications and maintained department website to support the students and faculty of the Department of Medical Physics.',
+    contributions: [
+      'Designed, implemented, and maintained source code.',
+      'Modified, updated and improved the department website, content and application.',
+      'Built new web pages and internal applications using PHP, MySQL and WordPress that serve around 250 students, faculties, and staffs of the Department of Medical Physics.',
+    ],
+    projects: [
+      'Contact form with verification using jQuery, dynamic data handling using AJAX, bots-prevention with Google Recaptcha API, dashboard view with intuitive interface for administrative staffs to easily manage the submissions.',
+      'Internal nomination system with multiple files upload, verification using jQuery, dynamic data handling using AJAX for Department faculties to nominate pre-doctoral students for research support and dashboard view for administrative staffs.',
+      'Learned about building Wordpress Plugins for the purpose of code sharing and reusability.',
+    ],
+    skills: [
+      'Working knowledge of PHP, MySQL, WordPress, HTML, CSS, JavaScript.',
+      'Ability to pick up new language and new development stack quickly.',
+      'Effective writing and communication skills.',
+      'Attention to detail, well organized.',
+      'Punctuality, reliable attendance, and flexibility.',
+      'Excellent time management skills.',
+    ],
+    visibility: true,
+  },
   {
     title: 'Residence Hall Math Tutor',
     location: 'UW-Madison',
@@ -62,9 +87,10 @@ const extraExperiences = [
       'Possess excellent communication skills, problem solving skills, and the ability to work with a diverse student body.',
       'Ability to work independently.',
     ],
+    visibility: true,
   },
   {
-    title: 'Culinary Student Team Member',
+    title: 'Dining Team Member',
     location: 'UW-Madison',
     date: 'August 2019 - May 2019',
     summary:
@@ -83,6 +109,7 @@ const extraExperiences = [
       'Attention to detail and organization.',
       'Ability to creatively solve problems.',
     ],
+    visibility: true,
   },
 ];
 
@@ -106,7 +133,7 @@ class Experiences extends React.Component {
   render() {
     return (
       <Container>
-        <Experience {...upcomingExperience} />
+        {/* <Experience {...upcomingExperience} /> */}
         <Experience {...mainExperience} />
         {!this.state.expandMoreExperience ? (
           <p className='see-more-statement'>

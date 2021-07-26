@@ -34,7 +34,7 @@ const Landing = () => {
       >
         <About />
       </Section>
-      <Section
+      {/* <Section
         id='stats'
         background='#990047'
         width='auto'
@@ -42,7 +42,7 @@ const Landing = () => {
         onMenu={false}
       >
         <Stats />
-      </Section>
+      </Section> */}
       <Section
         id='projects'
         height='100vh'

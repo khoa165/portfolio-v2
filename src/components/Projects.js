@@ -123,7 +123,7 @@ const projects = [
       'PredictHQ API',
       'Figma',
     ],
-    demo: 'https://www.buddyup.xyz/',
+    // demo: 'https://www.buddyup.xyz/',
     source: 'https://github.com/khoa165/buddyUp',
   },
   {
