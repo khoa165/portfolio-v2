@@ -1,6 +1,31 @@
 export const projects = [
 	{
-		title: 'CoffeeUp',
+		title: 'Safe Dining',
+		image:
+			'https://res.cloudinary.com/khoa165/image/upload/q_100/v1629640088/portfolio/dining.svg',
+		descriptions: [
+			'Led a team of 6 students through multiple Agile iterations of development to build a platform where restaurants’ managers can update information, protocols and real-time capacity statistics to Madison residents amidst the COVID-19 pandemic.',
+			'Collaborated with teammates to conduct design & planning documentation, develop 15 API endpoints, build intuitive user interface with 26 React components, and write over 150 tests that achieve 85% code coverage using MERN tech stack.',
+		],
+		note: 'CollegeGroupProject',
+		skills: [
+			'Node.js',
+			'Express.js',
+			'MongoDB',
+			'API development',
+			'JWT authentication',
+			'TDD with Chai, Supertest, Mocha',
+			'Jest, Enzyme',
+			'Selenium',
+			'React',
+			'Redux',
+			'Reactstrap',
+		],
+		source: 'https://github.com/psinha25/covid-19-restaurant-system',
+		demo: 'https://safe-dining-506.herokuapp.com/',
+	},
+	{
+		title: 'Coffee Up',
 		image:
 			'https://res.cloudinary.com/khoa165/image/upload/q_100/v1582446172/portfolio/productivity.svg',
 		descriptions: [
@@ -8,7 +33,7 @@ export const projects = [
 			'Set up CI/CD pipeline with GitHub Actions to automate deployment to Heroku on push',
 			'Build a user-friendly productivity app for tasks, bookmarks management and job application tracking with React and Redux',
 		],
-		note: 'ProjectUnderDevelopment',
+		note: 'PersonalProject',
 		skills: [
 			'Node.js',
 			'Express.js',
@@ -24,14 +49,27 @@ export const projects = [
 		demo: 'https://coffeeup.herokuapp.com/',
 	},
 	{
+		title: 'Drive360',
+		image:
+			'https://res.cloudinary.com/khoa165/image/upload/v1629640088/portfolio/driving.svg',
+		descriptions: [
+			'Designed and built an Android app with Unity VR component that provides learners with a driving simulation experience.',
+			'Utilized Firebase to build data-driven platform where learners can practice question sets and exchange discussions with instructors and learning fellows.',
+		],
+		note: 'CollegeGroupProject',
+		skills: ['Java', 'Android', 'Unity', 'Firebase'],
+		source: 'https://github.com/klmui/Drive360',
+	},
+	{
 		title: 'Intouch 4ever',
 		image:
-			'https://res.cloudinary.com/khoa165/image/upload/q_100/v1582449599/portfolio/contact_c1w7ky.svg',
+			'https://res.cloudinary.com/khoa165/image/upload/q_100/v1582449599/portfolio/keepcontact.svg',
 		descriptions: [
 			'Develop API endpoints using Node.js, Express.js, and MongoDB to build a simple contact manager app.',
 			'Authenticate routes with JSON Web Token, validate with Express-validator middleware, and conduct testing with Postman.',
 			'Implement user interface with React with Hooks and Context API.',
 		],
+		note: 'TutorialProject',
 		skills: [
 			'Node.js',
 			'Express.js',
@@ -55,6 +93,7 @@ export const projects = [
 			'Develop server side using Node.js, Express.js, and MongoDB to build an app for campgrounds review.',
 			'Authenticate routes with Passport.js and utilize Google Map API for location.',
 		],
+		note: 'TutorialProject',
 		skills: [
 			'Node.js',
 			'Express.js',
@@ -78,6 +117,7 @@ export const projects = [
 			'Led a team of four to complete a decent final class project. Facilitated coding sessions to build prototype with Lucidchart and assist others with desiging, implementing and debugging the program.',
 			'Set up, configured, and structured the project. Managed the coding progress throughout three weeks span. Implemented interfaces, graph data structure and the majority of front end.',
 		],
+		note: 'CollegeGroupProject',
 		skills: [
 			'Back-end with Java',
 			'Front-end with JavaFX',
@@ -93,6 +133,7 @@ export const projects = [
 			'Built a website to "stalk" other GitHub developers (basic info and public repositories) using data GitHub API',
 			"Managed application's states with React with Hooks and Context API.",
 		],
+		note: 'TutorialProject',
 		skills: ['GitHub API', 'React', 'Reactstrap', 'Context API'],
 		source: 'https://github.com/khoa165/dev-stalker',
 		demo: 'https://devstalker.netlify.com/',
@@ -105,6 +146,7 @@ export const projects = [
 			'Built a minimum viable product using Ruby on Rails and PostgreSQL that connects people with similar interests, focusing on 1-on-1 buddy networking and using a criteria-weighted score system to process user data.',
 			'Pitched idea and convinced others to join team. Led a team of four students using GitHub for collaboration and adopting Agile methodology to achieve an efficient 2-week sprint: daily standup and in-person interactions, Trello board for user stories/features-oriented, and flexible course of actions to ensure working software.',
 		],
+		note: 'BootcampGroupProject',
 		skills: [
 			'Ruby on Rails',
 			'PostgreSQL',
@@ -119,7 +161,7 @@ export const projects = [
 			'PredictHQ API',
 			'Figma',
 		],
-		// demo: 'https://www.buddyup.xyz/',
+		demo: 'https://bemybuddy.herokuapp.com/',
 		source: 'https://github.com/khoa165/buddyUp',
 	},
 	{
@@ -130,6 +172,7 @@ export const projects = [
 			'Built a minimum viable product using Ruby on Rails and PostgreSQL that connects pet lovers and those who might be in need of having others take care of their pets.',
 			'Pitched idea and convinced others to join team. Led a team of four students using GitHub for collaboration and adopting Agile methodology to achieve an efficient 1-week sprint: daily standup and in-person interactions, and flexible course of actions to ensure working software.',
 		],
+		note: 'BootcampGroupProject',
 		skills: [
 			'Ruby on Rails',
 			'PostgreSQL',
@@ -153,8 +196,10 @@ export const projects = [
 			'https://res.cloudinary.com/khoa165/image/upload/q_100/v1577895922/portfolio/shark.svg',
 		descriptions: [
 			'Built a classic game of big fish capturing smaller fish to evolve using Java and Processing graphic library',
+			'Implemented drag and drop functionality, as well as restart, pause, resume, settings feature',
 			'Practiced Object-oriented programming concepts and project design.',
 		],
+		note: 'PersonalProject',
 		skills: ['Back-end with Java', 'Front-end with Processing'],
 		source: 'https://github.com/khoa165/fish-evolution',
 	},

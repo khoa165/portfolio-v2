@@ -34,28 +34,28 @@ const Landing = () => {
 				<About />
 			</Section>
 			<Section
-				id='projects'
+				id='experiences'
 				height='100vh'
 				padding='150px 0 100px 0'
-				heading='PROJECTS'
+				heading='EXPERIENCES'
 				background={colors.backgroundTertiaryDark}
 				headingColor={colors.brandPrimaryColor}
 				headingMargin='20px auto 50px auto'
 				onMenu={true}
 			>
-				<Projects />
+				<Experiences />
 			</Section>
 			<Section
-				id='experiences'
+				id='projects'
 				height='100vh'
 				padding='150px 0 100px 0'
-				heading='EXPERIENCES'
+				heading='PROJECTS'
 				background={colors.backgroundSecondaryDark}
 				headingColor={colors.brandPrimaryColor}
 				headingMargin='20px auto 50px auto'
 				onMenu={true}
 			>
-				<Experiences />
+				<Projects />
 			</Section>
 			<Section
 				id='skills'
