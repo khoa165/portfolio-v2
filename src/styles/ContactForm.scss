@@ -1,73 +1,90 @@
 @import 'Variables';
 
 #contact {
-  form {
-    text-align: left;
-  }
-  #form-wrapper {
-    margin: 0 auto;
-    width: 390px;
-    .contact-statement {
-      margin: 0 auto;
-      width: 390px;
-      display: block;
-      color: $background-primary-light;
-      padding: 0 20px;
-      margin-bottom: 15px;
-      span {
-        color: $brand-primary-color;
-        font-style: italic;
-        font-weight: bold;
-      }
-    }
-  }
-  #fields-wrapper {
-    padding: 25px 10px 10px 10px;
-    border: 3px solid $brand-secondary-color;
-    border-radius: 5px;
-    box-shadow: inset 0 0 5px $brand-secondary-color,
-      0 0 10px $brand-secondary-color;
-    .form-group {
-      position: relative;
-      input:focus::placeholder,
-      textarea:focus::placeholder {
-        visibility: hidden;
-      }
-    }
-    .form-label {
-      font-size: 13px;
-      position: absolute;
-      top: -10px;
-      left: calc(50% - 154px);
-      padding: 0 5px;
-      background: $background-secondary-dark;
-      color: $brand-primary-color;
-      z-index: 50;
-    }
-    .form-control {
-      padding-top: 10px;
-      margin: 0 auto;
-      display: block;
-      width: 360px;
-      background: transparent;
-      &#contactFormNameField,
-      &#contactFormEmailField {
-        height: 40px;
-      }
-    }
-    #recaptcha-wrapper {
-      margin: 20px auto 0 auto;
-      width: 360px;
-      .g-recaptcha {
-        transform: scale(1.19);
-        -webkit-transform: scale(1.19);
-        transform-origin: 0 0;
-        -webkit-transform-origin: 0 0;
-      }
-    }
-    .submit-button-wrapper {
-      text-align: center;
-      margin: 10px auto;
-    }
-  }
+	form {
+		text-align: left;
+	}
+	#form-wrapper {
+		margin: 0 auto;
+		width: 390px;
+		.contact-statement {
+			margin: 0 auto;
+			width: 390px;
+			display: block;
+			color: $background-primary-light;
+			padding: 0 20px;
+			margin-bottom: 15px;
+			span {
+				color: $brand-primary-color;
+				font-style: italic;
+				font-weight: bold;
+			}
+		}
+	}
+	#fields-wrapper {
+		padding: 25px 10px 10px 10px;
+		border: 3px solid $brand-secondary-color;
+		border-radius: 5px;
+		box-shadow: inset 0 0 5px $brand-secondary-color,
+			0 0 10px $brand-secondary-color;
+		.form-group {
+			position: relative;
+			input:focus::placeholder,
+			textarea:focus::placeholder {
+				visibility: hidden;
+			}
+		}
+		.form-label {
+			font-size: 13px;
+			position: absolute;
+			top: -10px;
+			left: calc(50% - 154px);
+			padding: 0 5px;
+			background: $background-secondary-dark;
+			color: $brand-primary-color;
+			z-index: 50;
+		}
+		.form-control {
+			padding-top: 10px;
+			margin: 0 auto;
+			display: block;
+			width: 360px;
+			background: transparent;
+			&#contactFormNameField,
+			&#contactFormEmailField {
+				height: 40px;
+			}
+			color: white;
+
+			&::placeholder {
+				/* Chrome, Firefox, Opera, Safari 10.1+ */
+				color: $background-primary-light-grey;
+				opacity: 1; /* Firefox */
+			}
+
+			&:-ms-input-placeholder {
+				/* Internet Explorer 10-11 */
+				color: $background-primary-light-grey;
+			}
+
+			&::-ms-input-placeholder {
+				/* Microsoft Edge */
+				color: $background-primary-light-grey;
+			}
+		}
+		#recaptcha-wrapper {
+			margin: 20px auto 0 auto;
+			width: 360px;
+			.g-recaptcha {
+				transform: scale(1.19);
+				-webkit-transform: scale(1.19);
+				transform-origin: 0 0;
+				-webkit-transform-origin: 0 0;
+			}
+		}
+		.submit-button-wrapper {
+			text-align: center;
+			margin: 10px auto;
+		}
+	}
 }
