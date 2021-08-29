@@ -57,7 +57,7 @@ const Home = () => {
 					<Icon name='blogger' />
 				</a>
 				<a
-					href='https://www.hackerrank.com/khoa1652000'
+					href='https://www.hackerrank.com/khoa165'
 					rel='noopener noreferrer'
 					target='_blank'
 				>
