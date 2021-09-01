@@ -50,13 +50,6 @@ const Home = () => {
 					<Icon name='linkedin' />
 				</a>
 				<a
-					href='https://khoa165.github.io/'
-					rel='noopener noreferrer'
-					target='_blank'
-				>
-					<Icon name='blogger' />
-				</a>
-				<a
 					href='https://www.hackerrank.com/khoa165'
 					rel='noopener noreferrer'
 					target='_blank'
