@@ -66,7 +66,7 @@ const Home = () => {
 						avgTypingDelay={typeDelay}
 						avgTypingSpeed={typeSpeed}
 					>
-						Hello, I'm Khoa Thien Le (Harry)
+						Hello, I'm Khoa Thien Le
 						<br />
 						<span className='job-title'>Junior Software Developer</span>
 						<Cursor show={true} element='|' />
