@@ -1,40 +1,42 @@
 export const upcomingExperience = {
 	title: 'Full Stack Engineering Intern',
-	location: 'San Francisco, California',
-	date: '',
-	summary: '',
+	location: 'Cisco Meraki',
+	date: 'Jan 2022 - Apr 2022',
+	summary: 'More details will be updated once the internship is in progress.',
 	contributions: [],
 	projects: [],
 	skills: [],
-	visible: false,
-};
-
-export const mainExperience = {
-	title: 'Software Engineering Intern',
-	location: 'Adobe Inc, Adobe Stock Contributor team',
-	date: 'May 2021 - Aug 2021',
-	summary:
-		"Drove an initiative to refactor key component's implementation to increase code readability and maintainability.",
-	contributions: [
-		'Took ownership of the Asset Info Tagger refactor initiative: put together a plan, presented and gathered feedback from the team, carried out the development and testing phase, and presented the work to the Adobe Stock organization.',
-		'Built and integrated reusable UI components on top of React Spectrum to enforce Adobe brand consistency across the Adobe Stock Contributor website.',
-		'Participated in SCRUM team activities, including daily standup, refinement, sprint planning, tech discussion and code review.',
-		'Closed 25 Jira tickets and deployed over 4000-line changes into production that greatly improves site UI and accessibility.',
-	],
-	projects: [
-		"Asset Info Tagger refactor initiative, including shifting from React class-based components to functional components, cleaning up key component's implementation, and adding/modifying over 80 tests to enhance code readability and maintainability.",
-		'Accessibility tickets that focus on fixing contrast ratio, aria label and role, keyboard navigation and other minor bugs to improve the accessibility of the Contributor site.',
-	],
-	skills: [
-		'Working knowledge of Node.js, React, Jest, Enzyme',
-		'Ability to quickly learn and build on top of a huge existing code base',
-		'Effective teamwork and communication skills.',
-		"Attention to detail to help improve site's accessibility",
-		'Punctuality, reliable attendance, and flexibility.',
-		'Ability to work in a fast-paced and diverse team environment.',
-	],
 	visible: true,
 };
+
+export const mainExperiences = [
+	{
+		title: 'Software Engineering Intern',
+		location: 'Adobe Inc, Adobe Stock Contributor team',
+		date: 'May 2021 - Aug 2021',
+		summary:
+			'Drove an initiative to refactor key components on Asset Upload Page to increase code readability and maintainability and site accessibility.',
+		contributions: [
+			'Took ownership of the Asset Info Tagger refactor initiative: put together a plan, presented and gathered feedback from the team, carried out the development and testing phase, and presented the work to the Adobe Stock organization.',
+			'Built and integrated reusable UI components on top of React Spectrum to enforce Adobe brand consistency across the Adobe Stock Contributor website.',
+			'Participated in SCRUM team activities, including daily standup, refinement, sprint planning, tech discussion and code review.',
+			'Closed 25 Jira tickets and deployed over 4000-line changes into production that greatly improves site UI and accessibility.',
+		],
+		projects: [
+			"Asset Info Tagger refactor initiative, including shifting from React class-based components to functional components, cleaning up key component's implementation, and adding/modifying over 80 tests to enhance code readability and maintainability.",
+			'Accessibility tickets that focus on fixing contrast ratio, aria label and role, keyboard navigation and other minor bugs to improve the accessibility of the Contributor site.',
+		],
+		skills: [
+			'Working knowledge of Node.js, React, Jest, Enzyme',
+			'Ability to quickly learn and build on top of a huge existing code base',
+			'Effective teamwork and communication skills.',
+			"Attention to detail to help improve site's accessibility",
+			'Punctuality, reliable attendance, and flexibility.',
+			'Ability to work in a fast-paced and diverse team environment.',
+		],
+		visible: true,
+	},
+];
 
 export const extraExperiences = [
 	{

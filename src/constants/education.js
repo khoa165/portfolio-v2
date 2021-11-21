@@ -3,7 +3,7 @@ export const schools = [
 		name: 'University of Wisconsin - Madison',
 		color: 'red-hexagon',
 		degree: 'B.S. Computer Science & Data Science',
-		year: 'expected Dec 2022',
+		year: 'expected May 2023',
 	},
 	{
 		name: 'Le Wagon Barcelona',

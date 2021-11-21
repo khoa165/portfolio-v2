@@ -4,7 +4,7 @@ import { Container, Button } from 'reactstrap';
 import Experience from './Experience';
 import {
 	upcomingExperience,
-	mainExperience,
+	mainExperiences,
 	extraExperiences,
 } from '../constants/experiences';
 import '../styles/Experiences.scss';
@@ -29,7 +29,9 @@ const Experiences = () => {
 	return (
 		<Container>
 			<Experience {...upcomingExperience} />
-			<Experience {...mainExperience} />
+			{mainExperiences.map((experience, index) => {
+				return <Experience {...experience} key={index} />;
+			})}
 			{expand ? (
 				<Fragment>
 					{extraExperiences.map((experience, index) => {
