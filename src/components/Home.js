@@ -68,7 +68,11 @@ const Home = () => {
 					>
 						Hello, I'm Khoa Thien Le
 						<br />
-						<span className='job-title'>Junior Software Developer</span>
+						<span className='job-title'>
+							Incoming SWE intern @ Cisco Meraki (SP'22)
+							<br />
+							Former SWE intern @ Adobe (SU'21)
+						</span>
 						<Cursor show={true} element='|' />
 					</Typist>
 					<button className='elegant-button d-none' onClick={goToContact}>

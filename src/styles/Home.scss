@@ -3,177 +3,170 @@
 @import 'HelperMethods';
 
 #home {
-  color: $brand-primary-color;
-  position: relative;
-  .social-media {
-    z-index: 999;
-    position: absolute;
-    font-size: 40px;
-    top: 60px;
-    left: 79vw;
-    @include resize(601px, 650px) {
-      left: 83vw;
-    }
-    @include resize(651px, 991px) {
-      left: 84vw;
-    }
-    @include resize(992px, 1200px) {
-      left: 87vw;
-    }
-    @include resize(1201px, null) {
-      left: 90vw;
-    }
-    .icon {
-      display: block;
-      color: #fff;
-      height: 60px;
-      width: 60px;
-      border-radius: 8px;
-      margin: 10px;
-    }
-    .github {
-      background: #323232;
-    }
-    .linkedin {
-      background: #2766b1;
-    }
-    .blogger {
-      background: #f06a35;
-    }
-    .fa-hackerrank {
-      display: block;
-      color: #fff;
-      background: #25b658;
-      height: 60px;
-      width: 60px;
-      border-radius: 8px;
-      margin: 10px;
-      padding-top: 10px;
-    }
-    a:hover {
-      text-decoration: none;
-    }
-  }
-  .particle-canvas {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-  }
-  .container {
-    width: 70%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    position: absolute;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    top: 50vh;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-  }
+	color: $brand-primary-color;
+	position: relative;
+	.social-media {
+		z-index: 999;
+		position: absolute;
+		font-size: 40px;
+		top: 60px;
+		left: 79vw;
+		@include resize(601px, 650px) {
+			left: 83vw;
+		}
+		@include resize(651px, 991px) {
+			left: 84vw;
+		}
+		@include resize(992px, 1200px) {
+			left: 87vw;
+		}
+		@include resize(1201px, null) {
+			left: 90vw;
+		}
+		.icon {
+			display: block;
+			color: #fff;
+			height: 60px;
+			width: 60px;
+			border-radius: 8px;
+			margin: 10px;
+		}
+		.github {
+			background: #323232;
+		}
+		.linkedin {
+			background: #2766b1;
+		}
+		.blogger {
+			background: #f06a35;
+		}
+		.fa-hackerrank {
+			display: block;
+			color: #fff;
+			background: #25b658;
+			height: 60px;
+			width: 60px;
+			border-radius: 8px;
+			margin: 10px;
+			padding-top: 10px;
+		}
+		a:hover {
+			text-decoration: none;
+		}
+	}
+	.container {
+		width: 70%;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		position: absolute;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		top: 50vh;
+		left: 50%;
+		-webkit-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+	}
 
-  /* -------------------------------------------------------------------------- */
-  /* Typewriter */
-  .typing-title {
-    font-size: 30px;
-    font-weight: bolder;
-    font-family: $heading-primary-font, $heading-secondary-font;
-    letter-spacing: 3px;
-    -webkit-transition: 0.1s linear all;
-    -o-transition: 0.1s linear all;
-    transition: 0.1s linear all;
-    line-height: 45px;
-    text-align: center;
-    @include resize(null, 450px) {
-      font-size: 15px;
-    }
-    @include resize(null, 800px) {
-      font-size: 20px;
-    }
-  }
-  .typing-title .job-title {
-    color: $brand-secondary-color;
-    -webkit-animation: colorRend 2s linear 1s infinite forwards;
-    animation: colorRend 2s linear 1s infinite forwards;
-  }
-  .Typist .Cursor {
-    display: inline-block;
-  }
-  .Typist .Cursor--blinking {
-    opacity: 1;
-    border: none;
-    color: #e95555;
-    -webkit-animation: blink 1s linear infinite forwards;
-    animation: blink 1s linear infinite forwards;
-  }
+	/* -------------------------------------------------------------------------- */
+	/* Typewriter */
+	.typing-title {
+		font-size: 30px;
+		font-weight: bolder;
+		font-family: $heading-primary-font, $heading-secondary-font;
+		letter-spacing: 3px;
+		-webkit-transition: 0.1s linear all;
+		-o-transition: 0.1s linear all;
+		transition: 0.1s linear all;
+		line-height: 45px;
+		text-align: center;
+		@include resize(null, 450px) {
+			font-size: 15px;
+		}
+		@include resize(null, 800px) {
+			font-size: 20px;
+		}
+	}
+	.typing-title .job-title {
+		color: $brand-secondary-color;
+		-webkit-animation: colorRend 2s linear 1s infinite forwards;
+		animation: colorRend 2s linear 1s infinite forwards;
+	}
+	.Typist .Cursor {
+		display: inline-block;
+	}
+	.Typist .Cursor--blinking {
+		opacity: 1;
+		border: none;
+		color: #e95555;
+		-webkit-animation: blink 1s linear infinite forwards;
+		animation: blink 1s linear infinite forwards;
+	}
 
-  @-webkit-keyframes blink {
-    0% {
-      opacity: 1;
-    }
-    50% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
+	@-webkit-keyframes blink {
+		0% {
+			opacity: 1;
+		}
+		50% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	}
 
-  @keyframes blink {
-    0% {
-      opacity: 1;
-    }
-    50% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  @-webkit-keyframes colorRend {
-    0% {
-      color: #e95555;
-    }
-    25% {
-      color: #ec8585;
-    }
-    50% {
-      color: #ebb3b3;
-    }
-    75% {
-      color: #ec8585;
-    }
-    100% {
-      color: #e95555;
-    }
-  }
-  @keyframes colorRend {
-    0% {
-      color: #e95555;
-    }
-    25% {
-      color: #ec8585;
-    }
-    50% {
-      color: #ebb3b3;
-    }
-    75% {
-      color: #ec8585;
-    }
-    100% {
-      color: #e95555;
-    }
-  }
+	@keyframes blink {
+		0% {
+			opacity: 1;
+		}
+		50% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	}
+	@-webkit-keyframes colorRend {
+		0% {
+			color: #e95555;
+		}
+		25% {
+			color: #ec8585;
+		}
+		50% {
+			color: #ebb3b3;
+		}
+		75% {
+			color: #ec8585;
+		}
+		100% {
+			color: #e95555;
+		}
+	}
+	@keyframes colorRend {
+		0% {
+			color: #e95555;
+		}
+		25% {
+			color: #ec8585;
+		}
+		50% {
+			color: #ebb3b3;
+		}
+		75% {
+			color: #ec8585;
+		}
+		100% {
+			color: #e95555;
+		}
+	}
 }
