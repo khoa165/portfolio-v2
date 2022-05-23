@@ -1,6 +1,6 @@
 export const mainBio = [
-	'I am a rising senior at the University of Wisconsin at Madison pursuing Computer Science and Data Science majors. I am currently looking for internship and/or co-op opportunities in software development for 2022.',
-	'Throughout a variety of work, group and individual class and personal projects, I gained experience working with MERN stack (MongoDB, Expres.js, React.js, Node.js), Java, Python, PHP, Ruby (and Rails), SQL,Android.',
+	'I am a rising senior at the University of Wisconsin at Madison pursuing Computer Science and Data Science majors. I will soon be looking for new grad opportunities for May 2023.',
+	'Throughout a variety of work, group and individual class and personal projects, I gained experience working with MERN stack (MongoDB, Expres.js, React.js, Node.js), React Native, Java, Python, PHP, Ruby (and Rails), SQL, Android.',
 	'During my time as a college student, I have been taking challenging computer science coursework that strengthens my programming development as well as data structures and algorithms skills.',
 ];
 
