@@ -69,9 +69,9 @@ const Home = () => {
 						Hello, I'm Khoa Thien Le
 						<br />
 						<span className='job-title'>
-							Incoming SWE intern @ Cisco Meraki (SP'22)
+							SWE intern @ DoorDash
 							<br />
-							Former SWE intern @ Adobe (SU'21)
+							Former SWE intern @ Adobe, Cisco Meraki
 						</span>
 						<Cursor show={true} element='|' />
 					</Typist>
