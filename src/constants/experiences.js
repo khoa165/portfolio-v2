@@ -1,7 +1,7 @@
 export const upcomingExperience = {
-	title: 'Full Stack Engineering Intern',
-	location: 'Cisco Meraki',
-	date: 'Jan 2022 - Apr 2022',
+	title: 'Software Engineering Intern',
+	location: 'DoorDash',
+	date: 'May 2022 - Aug 2022',
 	summary: 'More details will be updated once the internship is in progress.',
 	contributions: [],
 	projects: [],
@@ -10,6 +10,36 @@ export const upcomingExperience = {
 };
 
 export const mainExperiences = [
+	{
+		title: 'Software Engineering Intern',
+		location: 'Cisco Meraki, Mobile Features team',
+		date: 'Jan 2022 - Apr 2022',
+		summary:
+			'Took charge of multiple projects that improve the login experience and bring MG product support onto Meraki mobile app in addition to cross-team effort and volunteering to make cross team service better.',
+		contributions: [
+			'Completed 42 Jira tickets across 3 codebases with over 5100-line changes, most of which were deployed into production.',
+			'Revamped the clusters flow that would enable thousands of users on the China cluster to use the mobile app once released.',
+			'Integrated hCaptcha widget on the React Native app and verified user responses on the Rails server to protect the application from bots and allow users to unlock themselves without navigating to the Meraki Web Dashboard.',
+			'Collaborated with cross-team engineers to bring Meraki Cellular Gateway (MG) product line support into the mobile app.',
+			'Took initiative to branch out and volunteered to help security team with Meraki internal security tool; optimized the time complexity of secrets pre-processing; overhauled the UI and enabled developers to search and filter secrets by attributes; built a workflow in Python/Flask that enabled developers to generate Terraform code snippets for secret slots in AWS S3 bucket.',
+			'Integrated Google MLKit in Swift to enable object detection for camera video stream as a PoC for Hack Week project.',
+		],
+		projects: [
+			'Cluster flow revamp that would enable China users to utilize the mobile app once released.',
+			'hCaptcha integration on mobile that unblock users from getting stuck after failed authentication attempts.',
+			'Meraki Cellular Gateway mobile support on mobile app.',
+			'Meraki internal tool complete UI refactoring.',
+			'Terraform code generation for secret slot in AWS S3 bucket',
+			'Goolge MLKit integration that enables object video detection for camera video stream.',
+		],
+		skills: [
+			'Working knowledge of Node.js, React Native, Testing Libary, Ruby on Rails, Python',
+			'Ability to quickly iterate and build new features on top of various existing code bases',
+			'Effective teamwork and communication skills.',
+			'Ability to manage multiple projects with speedy execution.',
+		],
+		visible: true,
+	},
 	{
 		title: 'Software Engineering Intern',
 		location: 'Adobe Inc, Adobe Stock Contributor team',
