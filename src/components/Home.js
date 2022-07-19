@@ -6,7 +6,7 @@ import scrollIntoView from 'smooth-scroll-into-view-if-needed';
 import '../styles/Home.scss';
 
 const Home = () => {
-	const [typer, setTyper] = useState({ typeDelay: 40, typeSpeed: 70 });
+	const [typer, setTyper] = useState({ typeDelay: 40, typeSpeed: 120 });
 	const { typeDelay, typeSpeed } = typer;
 	const speedUpTyper = () => setTyper({ typeDelay: 0, typeSpeed: 150 });
 	const typingDone = () => {
@@ -71,7 +71,7 @@ const Home = () => {
 						<span className='job-title'>
 							SWE intern @ DoorDash
 							<br />
-							Former SWE intern @ Adobe, Cisco Meraki
+							Prev @ Adobe, Cisco Meraki
 						</span>
 						<Cursor show={true} element='|' />
 					</Typist>

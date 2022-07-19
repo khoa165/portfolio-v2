@@ -31,11 +31,11 @@ const About = () => {
 					))}
 					{!expand ? (
 						<p className='see-more-statement'>
-							If you are not bored yet,
+							Expand to
 							<Button size='sm' onClick={toggle}>
-								Expand
+								read more
 							</Button>
-							to read more about my coding journey.
+							about the beginning of my coding journey.
 						</p>
 					) : null}
 				</Col>

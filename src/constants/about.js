@@ -1,7 +1,8 @@
 export const mainBio = [
-	'I am a rising senior at the University of Wisconsin at Madison pursuing Computer Science and Data Science majors. I will soon be looking for new grad opportunities for May 2023.',
-	'Throughout a variety of work, group and individual class and personal projects, I gained experience working with MERN stack (MongoDB, Expres.js, React.js, Node.js), React Native, Java, Python, PHP, Ruby (and Rails), SQL, Android.',
-	'During my time as a college student, I have been taking challenging computer science coursework that strengthens my programming development as well as data structures and algorithms skills.',
+	'I am a learning-driven and goals-oriented student Software Engineer and I am seeking for opportunities to utilize and grow my technical skills to build products and make impact.',
+	'As I challenge myself everyday to learn and grow, I aim to leverage my skills to good use and build products that serve the communities around me. I am looking for companies with a fast-paced engineering culture that supports engineering growth and empowers their engineers to take ownership and build customer-centric products.',
+	'I am a final-year undergraduate at the University of Wisconsin – Madison pursuing B.S. degree in Computer Science and Data Science. With my strong foundation in programming and data structures and algorithms built up from the challenging coursework throughout my undergraduate as well as a wide range of web technologies from Le Wagon Bootcamp (summer 2019), I enjoy building projects that solve my daily problems and automate trivial tasks.',
+	'My past internships at Adobe (frontend), Cisco Meraki (mobile) and DoorDash (backend) showcased my strengths in software engineering where I picked up a lot of technical and soft skills along the way while exposing myself to different areas of development.',
 ];
 
 export const additionalBio = [
