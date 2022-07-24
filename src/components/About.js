@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import scrollIntoView from 'smooth-scroll-into-view-if-needed';
 import { Container, Row, Col, Button } from 'reactstrap';
-import Avatar from './core/avatar';
+import Avatar from './core/Avatar';
 import { mainBio, additionalBio, lastParaBio } from '../constants/about';
 import '../styles/About.scss';
 

@@ -1,13 +1,13 @@
 import React from 'react';
 
-const avatar = () => {
+const Avatar = () => {
 	return (
 		<img
 			src='https://res.cloudinary.com/khoa165/image/upload/q_100/v1577895922/portfolio/avatar.jpg'
-			alt='My avatar'
+			alt="Khoa Le's avatar"
 			className='avatar'
 		/>
 	);
 };
 
-export default avatar;
+export default Avatar;

@@ -16,12 +16,12 @@ const Experience = ({
 		visible && (
 			<div className='experience-card'>
 				<Row>
-					<Col xs='11' lg='3' className='experience-info'>
+					<Col xs='12' lg='3' className='experience-info'>
 						<p className='experience-title'>{title}</p>
 						<p className='experience-location'>{location}</p>
 						<p className='experience-date'>{date}</p>
 					</Col>
-					<Col xs='11' md='12' lg='8' className='experience-details'>
+					<Col xs='12' lg='8' className='experience-details'>
 						{summary && <p className='experience-summary'>{summary}</p>}
 
 						{contributions && (

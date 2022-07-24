@@ -2,71 +2,81 @@
 @import 'HelperMethods';
 
 #experiences {
-  .see-more-statement {
-    color: grey;
-    font-size: 18px;
-  }
-  button {
-    margin: 0 10px;
-  }
-  a {
-    color: $brand-primary-color;
-    font-size: 20px;
-    margin-left: 20px;
-  }
-  a:hover {
-    text-decoration: none;
-    padding-bottom: 2px;
-    border-bottom: 1px solid $brand-primary-color;
-  }
-  .experience-card {
-    text-align: left;
-    border: 1px solid rgba(220, 224, 244, 0.4);
-    background: #fff;
-    border-radius: 5px;
-    margin: 20px 0;
-    padding: 20px 10px;
-    font-size: 16px;
-    cursor: pointer;
-    &:hover {
-      box-shadow: 3px 2px 5px $brand-primary-color,
-        3px 2px 10px $brand-secondary-color;
-    }
-    .bold {
-      font-weight: bold;
-    }
-    p {
-      margin: 0;
-    }
-    .row {
-      align-items: flex-start;
-      justify-content: flex-end;
-    }
-    .experience-info {
-      text-align: right;
-      @include resize(null, 991px) {
-        border-bottom: 2px solid $brand-primary-color;
-        padding: 10px 0;
-        margin: 0 30px 10px 30px;
-      }
-    }
-    .experience-title {
-      font-weight: bolder;
-      font-size: 18px;
-    }
-    .experience-details {
-      color: rgba(0, 0, 0, 0.8);
-      @include resize(992px, null) {
-        padding-left: 25px;
-        border-left: 2px solid $brand-primary-color;
-      }
-      @include resize(null, 991px) {
-        padding: 10px 40px;
-      }
-    }
-    .experience-summary {
-      font-style: italic;
-      margin-bottom: 15px;
-    }
-  }
+	.see-more-statement {
+		color: grey;
+		font-size: 18px;
+	}
+	button {
+		margin: 0 10px;
+	}
+	a {
+		color: $brand-primary-color;
+		font-size: 20px;
+		margin-left: 20px;
+	}
+	a:hover {
+		text-decoration: none;
+		padding-bottom: 2px;
+		border-bottom: 1px solid $brand-primary-color;
+	}
+	.experience-card {
+		text-align: left;
+		border: 1px solid rgba(220, 224, 244, 0.4);
+		background: $background-secondary-light;
+		border-radius: 5px;
+		margin: 20px 0;
+		padding: 20px 10px;
+		font-size: 16px;
+		cursor: pointer;
+		&:hover {
+			box-shadow: 3px 2px 5px $brand-primary-color,
+				3px 2px 10px $brand-secondary-color;
+		}
+		.bold {
+			font-weight: bold;
+		}
+		p {
+			margin: 0;
+		}
+		.row {
+			align-items: flex-start;
+			justify-content: flex-end;
+
+			// @include resize(576px, 991px) {
+			// 	flex-direction: column;
+			// 	margin-left: 50px;
+			// }
+			// @include resize(null, 575px) {
+			// 	flex-direction: column;
+			// 	// margin: 0;
+			// 	margin-right: -50px;
+			// }
+		}
+		.experience-info {
+			text-align: right;
+			@include resize(null, 991px) {
+				border-bottom: 2px solid $brand-primary-color;
+				padding-bottom: 10px;
+				margin-bottom: 20px;
+			}
+		}
+		.experience-title {
+			font-weight: bolder;
+			font-size: 18px;
+		}
+		.experience-details {
+			color: rgba(0, 0, 0, 0.8);
+			@include resize(992px, null) {
+				padding-left: 25px;
+				border-left: 2px solid $brand-primary-color;
+			}
+			@include resize(0, 991px) {
+				padding: 10px 30px;
+			}
+		}
+		.experience-summary {
+			font-style: italic;
+			margin-bottom: 15px;
+		}
+	}
 }

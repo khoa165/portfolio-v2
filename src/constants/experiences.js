@@ -17,9 +17,9 @@ const doordashIntern = {
 		'Took ownership of a project from start to finish on the backend side, from setting up the database and tables schema and persisting data from Kafka to CockroachDB to building search API with pagination support and logging key metrics.',
 	contributions: [
 		'Integrated CockroachDB into Kotlin microservice and built a data connection layer following DAO/repository pattern.',
-		'Created Cadence workflow to consume message from Kafka and persist to CockroachDB.',
-		'Wrote a Python script to backfill over 8 million records from Snowflake to CockroachDB on staging and production.',
-		'Designed database schema and built a search API endpoint in gRPC that supports multiple search params and pagination.',
+		'Consumed photos message from Kafka Consumer and created new activity on Cadence workflow to persist data to CockroachDB.',
+		'Wrote a Python script to backfill over 8 million photos and inference records from Snowflake to CockroachDB.',
+		'Designed database schema and built a search API endpoint in gRPC with pagination that enables Data Science & Machine Learning engineers to query inference data based on product UPC or item name with optional confidence level.',
 	],
 	projects: [
 		'Build a tool to support searching for product image inference data based on UPC or product name.',
@@ -52,7 +52,7 @@ const merakiIntern = {
 		'hCaptcha integration on mobile that unblock users from getting stuck after failed authentication attempts.',
 		'Meraki Cellular Gateway mobile support on mobile app.',
 		'Meraki internal tool complete UI refactoring.',
-		'Terraform code generation for secret slot in AWS S3 bucket',
+		'Terraform code generation for secret slot in AWS S3 bucket.',
 		'Goolge MLKit integration that enables object video detection for camera video stream.',
 	],
 	skills: [

@@ -66,16 +66,16 @@ const Home = () => {
 						avgTypingDelay={typeDelay}
 						avgTypingSpeed={typeSpeed}
 					>
-						Hello, I'm Khoa Thien Le
-						<br />
+						HI, I'M KHOA LE
+						<hr />
 						<span className='job-title'>
-							SWE intern @ DoorDash
+							SWE INTERN @ DOORDASH
 							<br />
-							Prev @ Adobe, Cisco Meraki
+							PREV @ ADOBE / MERAKI
 						</span>
 						<Cursor show={true} element='|' />
 					</Typist>
-					<button className='elegant-button d-none' onClick={goToContact}>
+					<button className='elegant-button mt-4 d-none' onClick={goToContact}>
 						Let's chat...
 					</button>
 				</div>

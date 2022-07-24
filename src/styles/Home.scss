@@ -69,7 +69,7 @@
 		justify-content: center;
 		-webkit-box-align: center;
 		-ms-flex-align: center;
-		align-items: center;
+		align-items: flex-start;
 		top: 50vh;
 		left: 50%;
 		-webkit-transform: translate(-50%, -50%);
@@ -87,19 +87,25 @@
 		-webkit-transition: 0.1s linear all;
 		-o-transition: 0.1s linear all;
 		transition: 0.1s linear all;
-		line-height: 45px;
-		text-align: center;
+		line-height: 1.2;
+		text-align: left;
 		@include resize(null, 450px) {
 			font-size: 15px;
 		}
 		@include resize(null, 800px) {
 			font-size: 20px;
 		}
+
+		hr {
+			border-color: $background-primary-light;
+			border-width: 2px;
+		}
 	}
 	.typing-title .job-title {
 		color: $brand-secondary-color;
 		-webkit-animation: colorRend 2s linear 1s infinite forwards;
 		animation: colorRend 2s linear 1s infinite forwards;
+		font-size: 75%;
 	}
 	.Typist .Cursor {
 		display: inline-block;

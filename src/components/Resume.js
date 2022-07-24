@@ -7,7 +7,7 @@ const Resume = () => {
 		<Fragment>
 			<div className='resume-download'>
 				<a
-					href='https://drive.google.com/file/d/1WS4FdYyi2Phb4FQB1f9pZ4bwY2rjOQ5B/view?usp=sharing'
+					href='https://drive.google.com/file/d/11d9Q5vuB-LwQKza_1Q5Vgp6CNEuEyJN4/view?usp=sharing'
 					className='brand-dark-button btn-lg'
 					rel='noopener noreferrer'
 					target='_blank'
@@ -20,7 +20,7 @@ const Resume = () => {
 					className='iframer'
 					title='resume'
 					type='application/pdf'
-					src='https://drive.google.com/file/d/1WS4FdYyi2Phb4FQB1f9pZ4bwY2rjOQ5B/preview'
+					src='https://drive.google.com/file/d/11d9Q5vuB-LwQKza_1Q5Vgp6CNEuEyJN4/preview'
 				/>
 			</Container>
 		</Fragment>
