@@ -8,7 +8,6 @@ import '../styles/NavigationBar.scss';
 
 const NavigationBar = ({ children }) => {
 	const [visible, setVisible] = useState(false);
-	const handlePusher = () => setVisible(false);
 	const handleToggle = () => setVisible(!visible);
 	const goToSection = (e, sectionName) => {
 		e.preventDefault();
@@ -30,7 +29,7 @@ const NavigationBar = ({ children }) => {
 			<Responsive {...Responsive.onlyMobile}>
 				<NavigationBarMobile
 					items={items}
-					onPusherClick={handlePusher}
+					onPusherClick={handleToggle}
 					onToggle={handleToggle}
 					visible={visible}
 					goToSection={goToSection}
@@ -41,7 +40,7 @@ const NavigationBar = ({ children }) => {
 			<Responsive {...Responsive.onlyTablet}>
 				<NavigationBarMobile
 					items={items}
-					onPusherClick={handlePusher}
+					onPusherClick={handleToggle}
 					onToggle={handleToggle}
 					visible={visible}
 					goToSection={goToSection}

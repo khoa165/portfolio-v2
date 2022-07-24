@@ -27,6 +27,7 @@ const NavigationBarMobile = ({
 	};
 
 	useEffect(() => {
+		console.log('inside mobile nav');
 		window.addEventListener('scroll', checkActiveSection);
 		window.addEventListener('load', checkActiveSection);
 		window.addEventListener('resize', checkActiveSection);
