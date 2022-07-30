@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
-import emailjs from 'emailjs-com';
+import React, { useState, useRef } from 'react';
+import emailjs from '@emailjs/browser';
+import ReCAPTCHA from 'react-google-recaptcha';
 import { Container, Form, FormGroup, Label, Input } from 'reactstrap';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -8,20 +9,26 @@ import '../styles/ContactForm.scss';
 const ContactForm = () => {
 	const [data, setData] = useState({ name: '', email: '', message: '' });
 	const { name, email, message } = data;
+	const captchaRef = useRef(null);
+
 	const onChange = (e) => setData({ ...data, [e.target.name]: e.target.value });
+
 	const onSubmit = (e) => {
 		e.preventDefault();
-		const templateId = 'portfolio_template';
-		sendMessage(templateId, {
-			message_html: message,
+		sendMessage({
+			message: message,
 			from_name: name,
 			reply_to: email,
+			'g-recaptcha-response': captchaRef.current.getValue(),
 		});
 	};
 
-	const sendMessage = (templateId, variables) => {
+	const sendMessage = (variables) => {
+		const serviceId = process.env.REACT_APP_EMAILJS_SERVICE_ID;
+		const templateId = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
+		const publicKey = process.env.REACT_APP_EMAILJS_PUBLIC_KEY;
 		emailjs
-			.send('gmail', templateId, variables)
+			.send(serviceId, templateId, variables, publicKey)
 			.then((res) => {
 				if (res.status === 200) {
 					toast.success(
@@ -30,7 +37,10 @@ const ContactForm = () => {
 				}
 			})
 			.catch((error) => {
-				if (error.text === 'The g-recaptcha-response parameter not found') {
+				if (
+					error.text ===
+					'reCAPTCHA: The g-recaptcha-response parameter not found'
+				) {
 					toast.error(
 						'Please verify that you are not robot by checking the reCAPTCHA box!'
 					);
@@ -98,10 +108,11 @@ const ContactForm = () => {
 							/>
 						</FormGroup>
 						<div id='recaptcha-wrapper'>
-							<div
+							<ReCAPTCHA
 								className='g-recaptcha'
-								data-sitekey='6LeHeMsUAAAAALWOkRTmh1ft2a7-QR4uguw6ImDz'
-							></div>
+								sitekey='6LeHeMsUAAAAALWOkRTmh1ft2a7-QR4uguw6ImDz'
+								ref={captchaRef}
+							/>
 						</div>
 						<div className='submit-button-wrapper'>
 							<button

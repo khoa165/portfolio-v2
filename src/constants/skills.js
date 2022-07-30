@@ -114,7 +114,7 @@ const databaseSkills = [
 		url: 'https://res.cloudinary.com/khoa165/image/upload/c_scale,w_100/v1577846578/portfolio/sqlite.svg',
 	},
 ];
-const programmingSkills = [];
+
 const toolSkills = [
 	{
 		details: 'Postman: proficient',

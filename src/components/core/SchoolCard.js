@@ -1,5 +1,5 @@
 import React from 'react';
-import { Col, Card, CardTitle, CardText } from 'reactstrap';
+import { Card, CardTitle, CardText } from 'reactstrap';
 import '../../styles/Education.scss';
 
 const SchoolCard = ({ color, degree, year, name }) => {
