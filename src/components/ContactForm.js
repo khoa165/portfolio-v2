@@ -44,9 +44,9 @@ const ContactForm = () => {
 					toast.error(
 						'Please verify that you are not robot by checking the reCAPTCHA box!'
 					);
-				} else if (error.text === 'timeout-or-duplicate') {
+				} else if (error.text === 'reCAPTCHA: timeout-or-duplicate') {
 					toast.error(
-						'It seems like your message was sent. Please avoid making duplicate submissions!'
+						'Either your reCAPTCHA token timed out or you are making duplicate submission! Please reload page and try again!'
 					);
 				} else {
 					toast.error('Unexpected error occurred. Please try again later!');
@@ -57,7 +57,7 @@ const ContactForm = () => {
 
 	return (
 		<Container>
-			<Form>
+			<Form onSubmit={onSubmit}>
 				<div id='form-wrapper'>
 					<p className='contact-statement'>
 						You can reach me at <span>ktle4@wisc.edu</span> or fill in the form
@@ -110,16 +110,12 @@ const ContactForm = () => {
 						<div id='recaptcha-wrapper'>
 							<ReCAPTCHA
 								className='g-recaptcha'
-								sitekey='6LeHeMsUAAAAALWOkRTmh1ft2a7-QR4uguw6ImDz'
+								sitekey={process.env.REACT_APP_RECAPTCHA_SITE_KEY}
 								ref={captchaRef}
 							/>
 						</div>
 						<div className='submit-button-wrapper'>
-							<button
-								type='submit'
-								className='brand-dark-button'
-								onClick={onSubmit}
-							>
+							<button type='submit' className='brand-dark-button'>
 								Submit
 							</button>
 						</div>
