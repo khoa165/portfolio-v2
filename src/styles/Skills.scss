@@ -79,49 +79,41 @@
 	}
 	.skill-icon {
 		margin: 30px auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+
 		img {
 			width: 75px;
+			height: 75px;
+			object-fit: contain;
+			border-radius: 20px;
 		}
 		.skill-details {
 			visibility: hidden;
-			width: 180px;
-			background-color: rgba(27, 36, 47, 0.65);
+			width: fit-content;
+			background-color: rgba(10, 104, 218, 0.65);
 			color: $brand-primary-color;
 			font-weight: bold;
 			text-align: center;
 			border-radius: 6px;
-			padding: 7px 0;
+			padding: 7px 20px;
 			position: absolute;
 			z-index: 1;
-			top: 65%;
-			left: 35%;
-			margin-left: -50px;
+			top: 115%;
 			-webkit-transition: all cubic-bezier(0.165, 0.84, 0.44, 1) 0.2s;
 			-o-transition: all cubic-bezier(0.165, 0.84, 0.44, 1) 0.2s;
 			transition: all cubic-bezier(0.165, 0.84, 0.44, 1) 0.2s;
 			-webkit-transform: scale(0);
 			-ms-transform: scale(0);
 			transform: scale(0);
-			&:after {
-				content: '';
-				position: absolute;
-				bottom: 100%;
-				left: 50%;
-				margin-left: -5px;
-				border-width: 5px;
-				border-style: solid;
-				border-color: transparent transparent rgba(27, 36, 47, 0.65) transparent;
-			}
 		}
 		&:hover .skill-details {
 			visibility: visible;
 			-webkit-transform: scale(1);
 			-ms-transform: scale(1);
 			transform: scale(1);
-			top: 105%;
-			-webkit-transition: all cubic-bezier(0.165, 0.84, 0.44, 1) 0.2s;
-			-o-transition: all cubic-bezier(0.165, 0.84, 0.44, 1) 0.2s;
-			transition: all cubic-bezier(0.165, 0.84, 0.44, 1) 0.2s;
 		}
 	}
 }
