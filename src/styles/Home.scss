@@ -106,6 +106,10 @@
 		-webkit-animation: colorRend 2s linear 1s infinite forwards;
 		animation: colorRend 2s linear 1s infinite forwards;
 		font-size: 75%;
+
+		.job-past-title {
+			font-size: 75%;
+		}
 	}
 	.Typist .Cursor {
 		display: inline-block;

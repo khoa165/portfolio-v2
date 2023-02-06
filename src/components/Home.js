@@ -69,9 +69,11 @@ const Home = () => {
 						HI, I'M KHOA LE
 						<hr />
 						<span className='job-title'>
-							SWE INTERN @ DOORDASH
+							SOFTWARE ENGINEER
 							<br />
-							PREV @ ADOBE / MERAKI
+							<span className='job-past-title'>
+								Former intern @ Adobe, Meraki, DoorDash, Snap
+							</span>
 						</span>
 						<Cursor show={true} element='|' />
 					</Typist>

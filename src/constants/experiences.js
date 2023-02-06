@@ -2,10 +2,19 @@ const snapIntern = {
 	title: 'Software Engineering Intern',
 	location: 'Snap Inc.',
 	date: 'Aug 2022 - Dec 2022',
-	summary: 'Will be updates once significant progress is made.',
-	contributions: [],
-	projects: [],
-	skills: [],
+	summary:
+		'Had a lot of fun during my final internship yet my first in-person experience',
+	contributions: [
+		'Processed data from ops team and migrated over 40K tracks from 7.3K collaborations to 15K artists using Golang script.',
+		'Pivoted the project to automate scanning over 3M artists and performing complex logic check to identify "collab artists".',
+		'Introduced new columns on DynamoDB for "collab artists" and updated Spark job to export data to Big Query.',
+		'Revamped API endpoints and configured React to enable roles and permissions for users on Snap Music Internal CMS.',
+	],
+	projects: [
+		'Collab artists linking and songs consolidation',
+		'User roles and permissions for Snap Music CMS',
+	],
+	skills: ['Working knowledge of Golang, DynamoDB, Grafana, gRPC, React.'],
 	visible: true,
 };
 
@@ -22,7 +31,7 @@ const doordashIntern = {
 		'Designed database schema and built a search API endpoint in gRPC with pagination that enables Data Science & Machine Learning engineers to query inference data based on product UPC or item name with optional confidence level.',
 	],
 	projects: [
-		'Build a tool to support searching for product image inference data based on UPC or product name.',
+		'Backend for a tool to support searching for product image inference data based on UPC or product name.',
 	],
 	skills: [
 		'Working knowledge of Kotlin, CockroachDB, Kafka, Cadence, gRPC, Python.',

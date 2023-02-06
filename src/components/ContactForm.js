@@ -60,8 +60,8 @@ const ContactForm = () => {
 			<Form onSubmit={onSubmit}>
 				<div id='form-wrapper'>
 					<p className='contact-statement'>
-						You can reach me at <span>ktle4@wisc.edu</span> or fill in the form
-						below. I will try to respond withing 48 hours.
+						You can reach me at <span>projects.khoa165@gmail.com</span> or fill
+						in the form below. I will try to respond withing 48 hours.
 					</p>
 					<div id='fields-wrapper'>
 						<FormGroup>
